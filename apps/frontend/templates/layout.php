@@ -42,7 +42,7 @@
                 </li>
                 <li class="current">
                     <span></span>
-                    <a href="#">задания</a>
+                    <a href="<?php echo url_for('project/index') ?>">задания</a>
                 </li>
                 <li class="postCurrent">
                     <span></span>

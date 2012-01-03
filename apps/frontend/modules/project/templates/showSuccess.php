@@ -5,20 +5,16 @@
 
 	<div id="sidebar">
 		<div class="sidebarBlock customer">
-			<div class="date">
-				[1.03.2011/15:15]
-			</div>
+			<div class="date">[<?php echo $projects->getDateTimeObject('created_at')->format('d.m.Y/h:m') ?>]</div>
 
-			<div>
-				<a href="#">Анастасия Левобережная</a>
-			</div>
+			<div><a href="#"><?php echo $projects->getAuthorId() ?></a></div>
 
 			<div class="rating">
-				<img src="images/icon_star_half.png">
-				<img src="images/icon_star_empty.png">
-				<img src="images/icon_star_empty.png">
-				<img src="images/icon_star_empty.png">
-				<img src="images/icon_star_empty.png">
+				<img src="/images/icon_star_half.png">
+				<img src="/images/icon_star_empty.png">
+				<img src="/images/icon_star_empty.png">
+				<img src="/images/icon_star_empty.png">
+				<img src="/images/icon_star_empty.png">
 				/ 2
 			</div>
 		</div>
@@ -54,11 +50,7 @@
 	<div id="primaryContent">
 		<div id="taskDescription">
 			<p class="first">
-				Нужно написать статью к Дню космонавтики. Как все начиналось, как происходило
-				и т.д. Рассказать историю про Гагарина и космонавтику в СССР.
-			</p>
-			<p>
-				Размер — 4000 знаков.
+				<?php echo $projects->getText() ?>
 			</p>
 		</div>
 
@@ -91,16 +83,16 @@
 		<tbody>
 		<tr class="odd">
 			<td class="avatar">
-				<img src="images/fake_avatar_1.png" alt="" />
+				<img src="/images/fake_avatar_1.png" alt="" />
 			</td>
 			<td class="userInfo">
 				<div class="title">Степан Трофимов</div>
 				<div class="rating">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
 					/ 302
 				</div>
 			</td>
@@ -110,16 +102,16 @@
 
 		<tr>
 			<td class="avatar">
-				<img src="images/fake_avatar_2.png" alt="" />
+				<img src="/images/fake_avatar_2.png" alt="" />
 			</td>
 			<td class="userInfo">
 				<div class="title">Екатерина Селиверстова</div>
 				<div class="rating">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
 					/ 255
 				</div>
 			</td>
@@ -129,16 +121,16 @@
 
 		<tr class="odd">
 			<td class="avatar">
-				<img src="images/fake_avatar_3.png" alt="" />
+				<img src="/images/fake_avatar_3.png" alt="" />
 			</td>
 			<td class="userInfo">
 				<div class="title">Ангелина Рычкова</div>
 				<div class="rating">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
 					/ 221
 				</div>
 
@@ -154,16 +146,16 @@
 
 		<tr>
 			<td class="avatar">
-				<img src="images/fake_avatar_4.png" alt="" />
+				<img src="/images/fake_avatar_4.png" alt="" />
 			</td>
 			<td class="userInfo">
 				<div class="title">Василий Пупкин</div>
 				<div class="rating">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
-					<img src="images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
+					<img src="/images/icon_star.png">
 					/ 217
 				</div>
 			</td>
@@ -174,39 +166,3 @@
 		</table>
 	</div>
 </div>
-
-
-<table>
-  <tbody>
-    <tr>
-      <th>Id:</th>
-      <td><?php echo $projects->getId() ?></td>
-    </tr>
-    <tr>
-      <th>Author:</th>
-      <td><?php echo $projects->getAuthorId() ?></td>
-    </tr>
-    <tr>
-      <th>Text:</th>
-      <td><?php echo $projects->getText() ?></td>
-    </tr>
-    <tr>
-      <th>Status:</th>
-      <td><?php echo $projects->getStatus() ?></td>
-    </tr>
-    <tr>
-      <th>Created at:</th>
-      <td><?php echo $projects->getCreatedAt() ?></td>
-    </tr>
-    <tr>
-      <th>Updated at:</th>
-      <td><?php echo $projects->getUpdatedAt() ?></td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<a href="<?php echo url_for('project/edit?id='.$projects->getId()) ?>">Edit</a>
-&nbsp;
-<a href="<?php echo url_for('project/index') ?>">List</a>
