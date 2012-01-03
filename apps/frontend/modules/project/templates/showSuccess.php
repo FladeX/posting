@@ -1,3 +1,5 @@
+<?php slot('title', $projects->getTitle()) ?>
+
 <?php slot('breadcrumbs', '<div id="breadcrumbs"><a href="#">Текущие задания</a> > </div><h2>' . $projects->getTitle() . '</h2>') ?>
 
 <div id="mainContent">
