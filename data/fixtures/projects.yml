@@ -4,9 +4,13 @@ projects:
         title:          Автофорум
         text:           Posting for auto-forum. I need topics about sport-cars like Porshe, Ferrari, Lamborgini, etc.
         price:          42
+        views_users:    20
+        views_guests:   529
         status:         1
     second_project:
         author_id:      1
         title:          Спамспам Спам
         text:           This is spam. Don't approve this project
+        views_users:    3
+        views_guests:   0
         status:         0

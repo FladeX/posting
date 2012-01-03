@@ -71,13 +71,15 @@ bids:
 projects:
     actAs: { Timestampable: ~ }
     columns:
-        author_id:  { type: integer, notnull: true }
-        title:      { type: string(255), notnull: true }
-        text:       { type: string(4000), notnull: false }
-        price:      { type: integer, notnull: false }
-        status:     { type: integer, notnull: true, default: 0 }
+        author_id:      { type: integer, notnull: true }
+        title:          { type: string(255), notnull: true }
+        text:           { type: string(4000), notnull: false }
+        price:          { type: integer, notnull: false }
+        views_users:    { type: integer, notnull: false }
+        views_guests:   { type: integer, notnull: false }
+        status:         { type: integer, notnull: true, default: 0 }
     relations:
-        users:      { onDelete: CASCADE, local: author_id, foreign: id, foreignAlias: users }
+        users:          { onDelete: CASCADE, local: author_id, foreign: id, foreignAlias: users }
 
 users:
     actAs: { Timestampable: ~ }

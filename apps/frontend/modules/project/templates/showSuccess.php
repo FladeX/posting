@@ -35,7 +35,7 @@
 			</tr>
 			<tr>
 				<td>Просмотров:</td>
-				<td class="value">83 / 15 пользователей</td>
+				<td class="value"><?php echo ($projects->getViewsGuests() + $projects->getViewsUsers()) ?> / <?php echo $projects->getViewsUsers() ?> пользователей</td>
 			</tr>
 			<tr>
 				<td>Претендентов:</td>

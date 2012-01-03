@@ -9,24 +9,30 @@
  * @property string $title
  * @property string $text
  * @property integer $price
+ * @property integer $views_users
+ * @property integer $views_guests
  * @property integer $status
  * @property users $users
  * @property Doctrine_Collection $projects
  * 
- * @method integer             getAuthorId()  Returns the current record's "author_id" value
- * @method string              getTitle()     Returns the current record's "title" value
- * @method string              getText()      Returns the current record's "text" value
- * @method integer             getPrice()     Returns the current record's "price" value
- * @method integer             getStatus()    Returns the current record's "status" value
- * @method users               getUsers()     Returns the current record's "users" value
- * @method Doctrine_Collection getProjects()  Returns the current record's "projects" collection
- * @method projects            setAuthorId()  Sets the current record's "author_id" value
- * @method projects            setTitle()     Sets the current record's "title" value
- * @method projects            setText()      Sets the current record's "text" value
- * @method projects            setPrice()     Sets the current record's "price" value
- * @method projects            setStatus()    Sets the current record's "status" value
- * @method projects            setUsers()     Sets the current record's "users" value
- * @method projects            setProjects()  Sets the current record's "projects" collection
+ * @method integer             getAuthorId()     Returns the current record's "author_id" value
+ * @method string              getTitle()        Returns the current record's "title" value
+ * @method string              getText()         Returns the current record's "text" value
+ * @method integer             getPrice()        Returns the current record's "price" value
+ * @method integer             getViewsUsers()   Returns the current record's "views_users" value
+ * @method integer             getViewsGuests()  Returns the current record's "views_guests" value
+ * @method integer             getStatus()       Returns the current record's "status" value
+ * @method users               getUsers()        Returns the current record's "users" value
+ * @method Doctrine_Collection getProjects()     Returns the current record's "projects" collection
+ * @method projects            setAuthorId()     Sets the current record's "author_id" value
+ * @method projects            setTitle()        Sets the current record's "title" value
+ * @method projects            setText()         Sets the current record's "text" value
+ * @method projects            setPrice()        Sets the current record's "price" value
+ * @method projects            setViewsUsers()   Sets the current record's "views_users" value
+ * @method projects            setViewsGuests()  Sets the current record's "views_guests" value
+ * @method projects            setStatus()       Sets the current record's "status" value
+ * @method projects            setUsers()        Sets the current record's "users" value
+ * @method projects            setProjects()     Sets the current record's "projects" collection
  * 
  * @package    posting
  * @subpackage model
@@ -53,6 +59,14 @@ abstract class Baseprojects extends sfDoctrineRecord
              'length' => 4000,
              ));
         $this->hasColumn('price', 'integer', null, array(
+             'type' => 'integer',
+             'notnull' => false,
+             ));
+        $this->hasColumn('views_users', 'integer', null, array(
+             'type' => 'integer',
+             'notnull' => false,
+             ));
+        $this->hasColumn('views_guests', 'integer', null, array(
              'type' => 'integer',
              'notnull' => false,
              ));
