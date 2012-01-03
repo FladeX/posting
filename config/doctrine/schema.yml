@@ -15,7 +15,7 @@ search_history:
 payments:
     actAs: { Timestampable: ~ }
     columns:
-        sum:        { type: integer, notnull: true }
+        sum:        { type: float, notnull: true }
         user_id:    { type: integer, notnull: true }
         type:       { type: string(255), notnull: true }
         status:     { type: integer, notnull: true, default: 0 }
