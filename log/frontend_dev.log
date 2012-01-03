@@ -168,3 +168,680 @@ Jan 03 14:06:16 symfony [info] {sfWebDebugLogger} Action "project/index" 12.59 m
 Jan 03 14:06:16 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 Jan 03 14:06:16 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.32 ms (1)
 Jan 03 14:06:16 symfony [info] {sfWebResponse} Send content (30440 o)
+Jan 03 14:27:29 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:27:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:27:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:27:29 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:27:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:27:29 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:27:29 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:27:29 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:27:29 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:27:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:27:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:27:29 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (9)
+Jan 03 14:27:29 symfony [info] {sfWebDebugLogger} Factories 6.27 ms (1)
+Jan 03 14:27:29 symfony [info] {sfWebDebugLogger} Action "project/index" 9.49 ms (1)
+Jan 03 14:27:29 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:27:29 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 8.07 ms (1)
+Jan 03 14:27:29 symfony [info] {sfWebResponse} Send content (31995 o)
+Jan 03 14:27:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:27:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:27:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:27:33 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:27:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:27:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:27:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:27:33 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:27:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:27:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:27:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:27:33 symfony [info] {sfWebDebugLogger} Configuration 1.74 ms (9)
+Jan 03 14:27:33 symfony [info] {sfWebDebugLogger} Factories 62.14 ms (1)
+Jan 03 14:27:33 symfony [info] {sfWebDebugLogger} Action "project/index" 11.74 ms (1)
+Jan 03 14:27:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:27:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.37 ms (1)
+Jan 03 14:27:33 symfony [info] {sfWebResponse} Send content (32052 o)
+Jan 03 14:31:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:31:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:31:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:31:05 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:31:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:31:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:31:05 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:31:05 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:05 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:31:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:05 symfony [info] {sfWebDebugLogger} Configuration 1.42 ms (9)
+Jan 03 14:31:05 symfony [info] {sfWebDebugLogger} Factories 15.21 ms (1)
+Jan 03 14:31:05 symfony [info] {sfWebDebugLogger} Action "project/index" 13.68 ms (1)
+Jan 03 14:31:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:31:05 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.46 ms (1)
+Jan 03 14:31:05 symfony [info] {sfWebResponse} Send content (45363 o)
+Jan 03 14:31:05 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/styles.css" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 24.65 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/resets.css" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 121.58 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/main_logo.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 115.49 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon_star.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 9.79 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 164.26 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_1.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 7.84 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 178.39 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_2.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 2.80 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 269.26 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_3.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 247.49 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_4.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 253.65 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_5.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 253.58 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.75 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 228.44 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 213.54 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 199.50 ms (1)
+Jan 03 14:31:06 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (5)
+Jan 03 14:31:06 symfony [info] {sfWebDebugLogger} Factories 186.73 ms (1)
+Jan 03 14:31:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:31:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:31:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:31:07 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:31:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:31:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:31:07 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:31:07 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:07 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 6.80 ms (1)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Action "project/index" 7.78 ms (1)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.07 ms (1)
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send content (45417 o)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/resets.css" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 6.28 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/main_logo.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.77 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 39.04 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_2.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 6.89 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 93.47 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_1.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 16.87 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 131.75 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon_star.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 182.25 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/css/styles.css" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.91 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 264.38 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_3.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 215.37 ms (1)
+Jan 03 14:31:07 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_4.png" (/).
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Configuration 0.70 ms (5)
+Jan 03 14:31:07 symfony [info] {sfWebDebugLogger} Factories 211.75 ms (1)
+Jan 03 14:31:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_5.png" (/).
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Factories 221.81 ms (1)
+Jan 03 14:31:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Configuration 3.63 ms (5)
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Factories 220.63 ms (1)
+Jan 03 14:31:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Factories 211.33 ms (1)
+Jan 03 14:31:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Factories 201.49 ms (1)
+Jan 03 14:31:08 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Configuration 0.68 ms (5)
+Jan 03 14:31:08 symfony [info] {sfWebDebugLogger} Factories 199.43 ms (1)
+Jan 03 14:31:27 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:31:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:31:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:31:27 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:31:27 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:31:27 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:31:27 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:31:27 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:27 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (9)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 5.08 ms (1)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Action "project/index" 8.44 ms (1)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 10.30 ms (1)
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send content (45420 o)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon_star.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 19.44 ms (1)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_3.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 10.93 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 70.56 ms (1)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_1.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 1.47 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 125.10 ms (1)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/main_logo.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 174.94 ms (1)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_2.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 233.72 ms (1)
+Jan 03 14:31:27 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_4.png" (/).
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:27 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:31:27 symfony [info] {sfWebDebugLogger} Factories 235.40 ms (1)
+Jan 03 14:31:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_5.png" (/).
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Factories 228.91 ms (1)
+Jan 03 14:31:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Factories 207.96 ms (1)
+Jan 03 14:31:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Factories 196.68 ms (1)
+Jan 03 14:31:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Configuration 0.74 ms (5)
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Factories 195.02 ms (1)
+Jan 03 14:31:28 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:31:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Configuration 0.67 ms (5)
+Jan 03 14:31:28 symfony [info] {sfWebDebugLogger} Factories 191.69 ms (1)
+Jan 03 14:33:35 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:33:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:33:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:33:35 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:33:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:33:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:33:35 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:33:35 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:33:35 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 5.13 ms (1)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Action "project/index" 7.97 ms (1)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.83 ms (1)
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send content (45419 o)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_2.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 19.78 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_3.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.80 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 71.58 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon_star.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 18.66 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 124.69 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_1.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 190.18 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/main_logo.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 215.56 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_4.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.81 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 252.43 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_5.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 254.37 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 3.87 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 269.21 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.79 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 244.36 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.75 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 229.31 ms (1)
+Jan 03 14:33:35 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Configuration 0.76 ms (5)
+Jan 03 14:33:35 symfony [info] {sfWebDebugLogger} Factories 218.51 ms (1)
+Jan 03 14:33:37 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:33:37 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:33:37 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:33:37 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:33:37 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:33:37 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:33:37 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:33:37 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:33:37 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (9)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Factories 6.50 ms (1)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Action "project/index" 8.84 ms (1)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.04 ms (1)
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send content (45419 o)
+Jan 03 14:33:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/icon_star.png" (/).
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Configuration 1.11 ms (5)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Factories 40.37 ms (1)
+Jan 03 14:33:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_2.png" (/).
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Configuration 0.83 ms (5)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Factories 82.38 ms (1)
+Jan 03 14:33:37 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_1.png" (/).
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Configuration 0.70 ms (5)
+Jan 03 14:33:37 symfony [info] {sfWebDebugLogger} Factories 129.06 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/main_logo.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 1.83 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 173.83 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_3.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 12.11 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 260.63 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_4.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 0.69 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 242.88 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/fake_avatar_5.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 2.64 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 253.41 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 0.73 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 247.23 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 6.88 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 240.23 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 0.86 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 231.17 ms (1)
+Jan 03 14:33:38 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:33:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Configuration 11.43 ms (5)
+Jan 03 14:33:38 symfony [info] {sfWebDebugLogger} Factories 216.02 ms (1)
+Jan 03 14:34:09 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:34:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:34:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:34:09 symfony [info] {sfWebDebugLogger} Configuration 0.85 ms (5)
+Jan 03 14:34:09 symfony [info] {sfWebDebugLogger} Factories 9.99 ms (1)
+Jan 03 14:35:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:35:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:35:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:35:23 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:35:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:35:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:35:23 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:35:23 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:35:23 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Factories 5.47 ms (1)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Action "project/index" 7.95 ms (1)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.91 ms (1)
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send content (45450 o)
+Jan 03 14:35:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_vk.png" (/).
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Configuration 0.70 ms (5)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Factories 6.45 ms (1)
+Jan 03 14:35:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_tw.png" (/).
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Configuration 0.72 ms (5)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Factories 27.38 ms (1)
+Jan 03 14:35:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_fb.png" (/).
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Configuration 0.67 ms (5)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Factories 42.10 ms (1)
+Jan 03 14:35:23 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/images/social_icon_yt.png" (/).
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 14:35:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Configuration 0.71 ms (5)
+Jan 03 14:35:23 symfony [info] {sfWebDebugLogger} Factories 100.63 ms (1)
+Jan 03 14:36:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:36:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:36:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:36:10 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:36:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:36:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:36:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:36:10 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:36:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:36:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:36:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:36:10 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (9)
+Jan 03 14:36:10 symfony [info] {sfWebDebugLogger} Factories 5.04 ms (1)
+Jan 03 14:36:10 symfony [info] {sfWebDebugLogger} Action "project/index" 7.03 ms (1)
+Jan 03 14:36:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:36:10 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.08 ms (1)
+Jan 03 14:36:10 symfony [info] {sfWebResponse} Send content (45454 o)
+Jan 03 14:36:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:36:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:36:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:36:33 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:36:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:36:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:36:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:36:33 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:36:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:36:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:36:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:36:33 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (9)
+Jan 03 14:36:33 symfony [info] {sfWebDebugLogger} Factories 5.13 ms (1)
+Jan 03 14:36:33 symfony [info] {sfWebDebugLogger} Action "project/index" 8.49 ms (1)
+Jan 03 14:36:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:36:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.30 ms (1)
+Jan 03 14:36:33 symfony [info] {sfWebResponse} Send content (45451 o)
+Jan 03 14:37:01 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:37:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:37:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:37:01 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:37:01 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:37:01 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:37:01 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:37:01 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:01 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:01 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:37:01 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:37:01 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Jan 03 14:37:01 symfony [info] {sfWebDebugLogger} Factories 8.63 ms (1)
+Jan 03 14:37:01 symfony [info] {sfWebDebugLogger} Action "project/index" 13.34 ms (1)
+Jan 03 14:37:01 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:37:01 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 8.51 ms (1)
+Jan 03 14:37:01 symfony [info] {sfWebResponse} Send content (45455 o)
+Jan 03 14:37:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:37:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:37:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:37:20 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:37:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:37:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:37:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:37:20 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:37:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:37:20 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Jan 03 14:37:20 symfony [info] {sfWebDebugLogger} Factories 6.20 ms (1)
+Jan 03 14:37:20 symfony [info] {sfWebDebugLogger} Action "project/index" 10.15 ms (1)
+Jan 03 14:37:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:37:20 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.57 ms (1)
+Jan 03 14:37:20 symfony [info] {sfWebResponse} Send content (45455 o)
+Jan 03 14:37:21 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:37:21 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:37:21 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:37:21 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:37:21 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:37:21 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:37:21 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:37:21 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:21 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:21 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:37:21 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:37:21 symfony [info] {sfWebDebugLogger} Configuration 1.34 ms (9)
+Jan 03 14:37:21 symfony [info] {sfWebDebugLogger} Factories 7.93 ms (1)
+Jan 03 14:37:21 symfony [info] {sfWebDebugLogger} Action "project/index" 22.33 ms (1)
+Jan 03 14:37:21 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:37:21 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.82 ms (1)
+Jan 03 14:37:21 symfony [info] {sfWebResponse} Send content (45455 o)
+Jan 03 14:37:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:37:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:37:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:37:22 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:37:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:37:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:37:22 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:37:22 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:22 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:37:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:37:22 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+Jan 03 14:37:22 symfony [info] {sfWebDebugLogger} Factories 6.56 ms (1)
+Jan 03 14:37:22 symfony [info] {sfWebDebugLogger} Action "project/index" 9.21 ms (1)
+Jan 03 14:37:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:37:22 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.46 ms (1)
+Jan 03 14:37:22 symfony [info] {sfWebResponse} Send content (45454 o)
+Jan 03 14:37:23 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:37:23 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:37:23 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:37:23 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:37:23 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:37:23 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:37:23 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:37:23 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:23 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:37:23 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:37:23 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:37:23 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (9)
+Jan 03 14:37:23 symfony [info] {sfWebDebugLogger} Factories 5.02 ms (1)
+Jan 03 14:37:23 symfony [info] {sfWebDebugLogger} Action "project/index" 10.44 ms (1)
+Jan 03 14:37:23 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:37:23 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 12.37 ms (1)
+Jan 03 14:37:23 symfony [info] {sfWebResponse} Send content (45455 o)
+Jan 03 14:39:09 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:39:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:39:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:39:09 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:39:09 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:39:09 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:39:09 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:39:09 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:09 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:39:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:39:09 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+Jan 03 14:39:09 symfony [info] {sfWebDebugLogger} Factories 8.62 ms (1)
+Jan 03 14:39:09 symfony [info] {sfWebDebugLogger} Action "project/index" 12.76 ms (1)
+Jan 03 14:39:09 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:39:09 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.95 ms (1)
+Jan 03 14:39:09 symfony [info] {sfWebResponse} Send content (45432 o)
+Jan 03 14:39:10 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:39:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:39:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:39:10 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:39:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:39:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:39:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:39:10 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:39:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:39:10 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+Jan 03 14:39:10 symfony [info] {sfWebDebugLogger} Factories 22.58 ms (1)
+Jan 03 14:39:10 symfony [info] {sfWebDebugLogger} Action "project/index" 11.73 ms (1)
+Jan 03 14:39:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:39:10 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.44 ms (1)
+Jan 03 14:39:10 symfony [info] {sfWebResponse} Send content (45456 o)
+Jan 03 14:39:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:39:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:39:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:39:20 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:39:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:39:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:39:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:39:20 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:39:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:39:20 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+Jan 03 14:39:20 symfony [info] {sfWebDebugLogger} Factories 5.35 ms (1)
+Jan 03 14:39:20 symfony [info] {sfWebDebugLogger} Action "project/index" 9.73 ms (1)
+Jan 03 14:39:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:39:20 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 12.76 ms (1)
+Jan 03 14:39:20 symfony [info] {sfWebResponse} Send content (45452 o)
+Jan 03 14:39:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:39:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:39:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:39:24 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:39:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:39:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:39:24 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:39:24 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:24 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:39:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:39:24 symfony [info] {sfWebDebugLogger} Configuration 4.87 ms (9)
+Jan 03 14:39:24 symfony [info] {sfWebDebugLogger} Factories 37.14 ms (1)
+Jan 03 14:39:24 symfony [info] {sfWebDebugLogger} Action "project/index" 10.17 ms (1)
+Jan 03 14:39:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:39:24 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.70 ms (1)
+Jan 03 14:39:24 symfony [info] {sfWebResponse} Send content (45398 o)
+Jan 03 14:39:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:39:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:39:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:39:26 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:39:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:39:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:39:26 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:39:26 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:26 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:39:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:39:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:39:26 symfony [info] {sfWebDebugLogger} Configuration 1.17 ms (9)
+Jan 03 14:39:26 symfony [info] {sfWebDebugLogger} Factories 5.01 ms (1)
+Jan 03 14:39:26 symfony [info] {sfWebDebugLogger} Action "project/index" 7.32 ms (1)
+Jan 03 14:39:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:39:26 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.04 ms (1)
+Jan 03 14:39:26 symfony [info] {sfWebResponse} Send content (45452 o)
+Jan 03 14:41:05 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 14:41:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 14:41:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 14:41:05 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 14:41:05 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 14:41:05 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 14:41:05 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 14:41:05 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:41:05 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 14:41:05 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 14:41:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 14:41:05 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Jan 03 14:41:05 symfony [info] {sfWebDebugLogger} Factories 8.30 ms (1)
+Jan 03 14:41:05 symfony [info] {sfWebDebugLogger} Action "project/index" 17.23 ms (1)
+Jan 03 14:41:05 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 14:41:05 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.55 ms (1)
+Jan 03 14:41:05 symfony [info] {sfWebResponse} Send content (40778 o)
