@@ -1,0 +1,13 @@
+users:
+    forumstudio:
+        user_name:      forumstudio
+        user_email:     42@forumstudio.ru
+        user_status:    1
+    FladeX:
+        user_name:      FladeX
+        user_email:     FladeX@yandex.ru
+        user_status:    1
+    posting_tester:
+        user_name:      posting_tester
+        user_email:     mail@example.com
+        user_status:    0

@@ -1,0 +1,9 @@
+projects:
+    first_project:
+        author_id:      1
+        text:           Posting for auto-forum. I need topics about sport-cars like Porshe, Ferrari, Lamborgini, etc.
+        status:         1
+    second_project:
+        author_id:      1
+        text:           This is spam. Don't approve this project
+        status:         0
