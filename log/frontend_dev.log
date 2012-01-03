@@ -1473,3 +1473,42 @@ Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Action "project/index" 13.96 m
 Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.24 ms (1)
 Jan 03 15:36:08 symfony [info] {sfWebResponse} Send content (40407 o)
+Jan 03 15:41:13 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:41:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:41:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:41:13 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:41:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:41:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:41:13 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:41:13 symfony [info] {main} Set slot "title"
+Jan 03 15:41:13 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:41:13 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:41:13 symfony [info] {main} Get slot "title"
+Jan 03 15:41:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:41:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:41:13 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (9)
+Jan 03 15:41:13 symfony [info] {sfWebDebugLogger} Factories 5.03 ms (1)
+Jan 03 15:41:13 symfony [info] {sfWebDebugLogger} Action "project/index" 7.44 ms (1)
+Jan 03 15:41:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:41:13 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.26 ms (1)
+Jan 03 15:41:13 symfony [info] {sfWebResponse} Send content (40438 o)
+Jan 03 15:41:19 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 03 15:41:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:41:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:41:19 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 03 15:41:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 03 15:41:20 symfony [info] {sfPartialView} Render "/www/posting/apps/frontend/modules/project/templates/_form.php"
+Jan 03 15:41:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:41:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_name AS u__user_name, u.user_email AS u__user_email, u.user_status AS u__user_status, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM users u - ()
+Jan 03 15:41:20 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:41:20 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:41:20 symfony [info] {main} Get slot "title"
+Jan 03 15:41:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:41:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Factories 8.39 ms (1)
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Action "project/new" 13.54 ms (1)
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 36.96 ms (1)
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Partial "project/_form" 31.48 ms (1)
+Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:41:20 symfony [info] {sfWebResponse} Send content (54741 o)

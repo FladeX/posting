@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <?php include_javascripts() ?>
 <?php include_stylesheets() ?>
-<title><?php include_slot('title') ?></title>
+<title><?php if (!include_slot('title')): ?>Posting.ru<?php endif; ?></title>
 <link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
