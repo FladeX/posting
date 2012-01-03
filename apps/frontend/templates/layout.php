@@ -5,7 +5,8 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <?php include_javascripts() ?>
 <?php include_stylesheets() ?>
-<title>Posting.ru — биржа наполнения форумов - Текущие задания</title>
+<title><?php include_slot('title') ?></title>
+<link rel="shortcut icon" href="/favicon.ico" />
 </head>
 <body>
 

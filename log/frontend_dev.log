@@ -1331,3 +1331,145 @@ Jan 03 15:24:30 symfony [info] {sfWebDebugLogger} Action "project/index" 7.85 ms
 Jan 03 15:24:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 Jan 03 15:24:30 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.41 ms (1)
 Jan 03 15:24:30 symfony [info] {sfWebResponse} Send content (39906 o)
+Jan 03 15:30:31 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:30:31 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:30:31 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:30:31 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:30:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:30:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:30:31 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:30:31 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:30:31 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:30:31 symfony [info] {main} Get slot "title"
+Jan 03 15:30:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:30:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:30:31 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (9)
+Jan 03 15:30:31 symfony [info] {sfWebDebugLogger} Factories 7.87 ms (1)
+Jan 03 15:30:31 symfony [info] {sfWebDebugLogger} Action "project/index" 11.75 ms (1)
+Jan 03 15:30:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:30:31 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.94 ms (1)
+Jan 03 15:30:31 symfony [info] {sfWebResponse} Send content (40163 o)
+Jan 03 15:31:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:31:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:31:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:31:49 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:31:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:31:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:31:49 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:31:49 symfony [info] {main} Set slot "title"
+Jan 03 15:31:49 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:31:49 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:31:49 symfony [info] {main} Get slot "title"
+Jan 03 15:31:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:31:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:31:49 symfony [info] {sfWebDebugLogger} Configuration 1.44 ms (9)
+Jan 03 15:31:49 symfony [info] {sfWebDebugLogger} Factories 5.99 ms (1)
+Jan 03 15:31:49 symfony [info] {sfWebDebugLogger} Action "project/index" 17.70 ms (1)
+Jan 03 15:31:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:31:49 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.55 ms (1)
+Jan 03 15:31:49 symfony [info] {sfWebResponse} Send content (40390 o)
+Jan 03 15:33:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:33:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:33:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:33:56 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:33:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:33:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:33:56 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:33:56 symfony [info] {main} Set slot "title"
+Jan 03 15:33:56 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:33:56 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:33:56 symfony [info] {main} Get slot "title"
+Jan 03 15:33:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:33:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:33:56 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (9)
+Jan 03 15:33:56 symfony [info] {sfWebDebugLogger} Factories 5.22 ms (1)
+Jan 03 15:33:56 symfony [info] {sfWebDebugLogger} Action "project/index" 7.80 ms (1)
+Jan 03 15:33:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:33:56 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.27 ms (1)
+Jan 03 15:33:56 symfony [info] {sfWebResponse} Send content (40438 o)
+Jan 03 15:33:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:33:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:33:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:33:58 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:33:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:33:58 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:33:58 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:33:58 symfony [info] {main} Set slot "title"
+Jan 03 15:33:58 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:33:58 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:33:58 symfony [info] {main} Get slot "title"
+Jan 03 15:33:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:33:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:33:58 symfony [info] {sfWebDebugLogger} Configuration 1.48 ms (9)
+Jan 03 15:33:58 symfony [info] {sfWebDebugLogger} Factories 5.69 ms (1)
+Jan 03 15:33:58 symfony [info] {sfWebDebugLogger} Action "project/index" 7.78 ms (1)
+Jan 03 15:33:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:33:58 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 12.94 ms (1)
+Jan 03 15:33:58 symfony [info] {sfWebResponse} Send content (40462 o)
+Jan 03 15:34:48 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/robots.txt" (/).
+Jan 03 15:34:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 15:34:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:34:48 symfony [info] {sfWebDebugLogger} Configuration 0.78 ms (5)
+Jan 03 15:34:48 symfony [info] {sfWebDebugLogger} Factories 9.14 ms (1)
+Jan 03 15:35:52 symfony [err] {sfError404Exception} Empty module and/or action after parsing the URL "/robots.txt" (/).
+Jan 03 15:35:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 15:35:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:35:52 symfony [info] {sfWebDebugLogger} Configuration 0.82 ms (5)
+Jan 03 15:35:52 symfony [info] {sfWebDebugLogger} Factories 9.72 ms (1)
+Jan 03 15:35:53 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:35:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:35:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:35:53 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:35:53 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:35:53 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:35:53 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:35:53 symfony [info] {main} Set slot "title"
+Jan 03 15:35:53 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:35:53 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:35:53 symfony [info] {main} Get slot "title"
+Jan 03 15:35:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:35:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:35:53 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (9)
+Jan 03 15:35:53 symfony [info] {sfWebDebugLogger} Factories 4.93 ms (1)
+Jan 03 15:35:53 symfony [info] {sfWebDebugLogger} Action "project/index" 11.41 ms (1)
+Jan 03 15:35:53 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:35:53 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.03 ms (1)
+Jan 03 15:35:53 symfony [info] {sfWebResponse} Send content (40407 o)
+Jan 03 15:35:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:35:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:35:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:35:55 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:35:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:35:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:35:55 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:35:55 symfony [info] {main} Set slot "title"
+Jan 03 15:35:55 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:35:55 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:35:55 symfony [info] {main} Get slot "title"
+Jan 03 15:35:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:35:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:35:55 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+Jan 03 15:35:55 symfony [info] {sfWebDebugLogger} Factories 5.08 ms (1)
+Jan 03 15:35:55 symfony [info] {sfWebDebugLogger} Action "project/index" 8.35 ms (1)
+Jan 03 15:35:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:35:55 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.87 ms (1)
+Jan 03 15:35:55 symfony [info] {sfWebResponse} Send content (40438 o)
+Jan 03 15:36:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:36:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:36:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:36:08 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:36:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:36:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:36:08 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:36:08 symfony [info] {main} Set slot "title"
+Jan 03 15:36:08 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:36:08 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:36:08 symfony [info] {main} Get slot "title"
+Jan 03 15:36:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:36:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Configuration 1.37 ms (9)
+Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Factories 8.00 ms (1)
+Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Action "project/index" 13.96 ms (1)
+Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:36:08 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.24 ms (1)
+Jan 03 15:36:08 symfony [info] {sfWebResponse} Send content (40407 o)
