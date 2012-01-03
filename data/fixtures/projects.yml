@@ -3,6 +3,7 @@ projects:
         author_id:      1
         title:          Автофорум
         text:           Posting for auto-forum. I need topics about sport-cars like Porshe, Ferrari, Lamborgini, etc.
+        price:          42
         status:         1
     second_project:
         author_id:      1

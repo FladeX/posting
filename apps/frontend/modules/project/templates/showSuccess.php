@@ -24,7 +24,7 @@
 			<tbody>
 			<tr>
 				<td>Цена:</td>
-				<td class="value price">15 wmr</td>
+				<td class="value price"><?php echo $projects->getPrice() ?> wmr</td>
 			</tr>
 			<tr>
 				<td>Открыт до:</td>

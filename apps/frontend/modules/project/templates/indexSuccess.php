@@ -142,7 +142,7 @@
 				<?php echo $projects->getText() ?>
 			</span>
 		</td>
-		<td class="value">120</td>
+		<td class="value"><?php echo $projects->getPrice() ?></td>
 		<td class="value last">2</td>
 	</tr>
 	<?php endforeach; ?>
