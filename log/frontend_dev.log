@@ -1512,3 +1512,935 @@ Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} View "Success" for "project/ne
 Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Partial "project/_form" 31.48 ms (1)
 Jan 03 15:41:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 Jan 03 15:41:20 symfony [info] {sfWebResponse} Send content (54741 o)
+Jan 03 15:45:18 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 03 15:45:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:45:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:45:18 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 03 15:45:18 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 03 15:45:18 symfony [info] {sfPartialView} Render "/www/posting/apps/frontend/modules/project/templates/_form.php"
+Jan 03 15:45:18 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:45:18 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_name AS u__user_name, u.user_email AS u__user_email, u.user_status AS u__user_status, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM users u - ()
+Jan 03 15:45:18 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:45:18 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:45:18 symfony [info] {main} Get slot "title"
+Jan 03 15:45:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:45:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} Configuration 1.50 ms (9)
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} Factories 9.49 ms (1)
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} Action "project/new" 9.28 ms (1)
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 37.41 ms (1)
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} Partial "project/_form" 32.22 ms (1)
+Jan 03 15:45:18 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:45:18 symfony [info] {sfWebResponse} Send content (54745 o)
+Jan 03 15:45:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:45:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:45:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:45:59 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:45:59 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:45:59 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:45:59 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:45:59 symfony [info] {main} Set slot "title"
+Jan 03 15:45:59 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:45:59 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:45:59 symfony [info] {main} Get slot "title"
+Jan 03 15:45:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:45:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:45:59 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+Jan 03 15:45:59 symfony [info] {sfWebDebugLogger} Factories 5.61 ms (1)
+Jan 03 15:45:59 symfony [info] {sfWebDebugLogger} Action "project/index" 7.72 ms (1)
+Jan 03 15:45:59 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:45:59 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.59 ms (1)
+Jan 03 15:45:59 symfony [info] {sfWebResponse} Send content (40406 o)
+Jan 03 15:48:35 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:48:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:48:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:48:35 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:48:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:48:35 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:48:35 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:48:35 symfony [info] {main} Set slot "title"
+Jan 03 15:48:35 symfony [notice] {sfWebDebugLogger}  Notice at /www/posting/apps/frontend/modules/project/templates/indexSuccess.php on line 24 (Undefined variable: job)
+Jan 03 15:48:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:48:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:48:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:48:55 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:48:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:48:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:48:55 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:48:55 symfony [info] {main} Set slot "title"
+Jan 03 15:48:55 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:48:55 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:48:55 symfony [info] {main} Get slot "title"
+Jan 03 15:48:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:48:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:48:55 symfony [info] {sfWebDebugLogger} Configuration 1.58 ms (9)
+Jan 03 15:48:55 symfony [info] {sfWebDebugLogger} Factories 8.98 ms (1)
+Jan 03 15:48:55 symfony [info] {sfWebDebugLogger} Action "project/index" 10.77 ms (1)
+Jan 03 15:48:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:48:55 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.58 ms (1)
+Jan 03 15:48:55 symfony [info] {sfWebResponse} Send content (40541 o)
+Jan 03 15:48:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 15:48:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:48:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:48:57 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 15:48:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:48:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 15:48:57 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 15:48:57 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:48:57 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:48:57 symfony [info] {main} Get slot "title"
+Jan 03 15:48:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:48:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:48:57 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (9)
+Jan 03 15:48:57 symfony [info] {sfWebDebugLogger} Factories 5.14 ms (1)
+Jan 03 15:48:57 symfony [info] {sfWebDebugLogger} Action "project/show" 9.65 ms (1)
+Jan 03 15:48:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:48:57 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.58 ms (1)
+Jan 03 15:48:57 symfony [info] {sfWebResponse} Send content (40020 o)
+Jan 03 15:49:08 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:49:08 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:49:08 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:49:08 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:49:08 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:49:08 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:49:08 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:49:08 symfony [info] {main} Set slot "title"
+Jan 03 15:49:08 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:08 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:08 symfony [info] {main} Get slot "title"
+Jan 03 15:49:08 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:49:08 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:49:08 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Jan 03 15:49:08 symfony [info] {sfWebDebugLogger} Factories 5.46 ms (1)
+Jan 03 15:49:08 symfony [info] {sfWebDebugLogger} Action "project/index" 9.50 ms (1)
+Jan 03 15:49:08 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:49:08 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.14 ms (1)
+Jan 03 15:49:08 symfony [info] {sfWebResponse} Send content (40508 o)
+Jan 03 15:49:10 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 15:49:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:49:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:49:10 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 15:49:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:49:10 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 15:49:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 15:49:10 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:10 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:10 symfony [info] {main} Get slot "title"
+Jan 03 15:49:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:49:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:49:10 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Jan 03 15:49:10 symfony [info] {sfWebDebugLogger} Factories 10.72 ms (1)
+Jan 03 15:49:10 symfony [info] {sfWebDebugLogger} Action "project/show" 15.66 ms (1)
+Jan 03 15:49:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:49:10 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.24 ms (1)
+Jan 03 15:49:10 symfony [info] {sfWebResponse} Send content (40021 o)
+Jan 03 15:49:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 15:49:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 15:49:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 15:49:11 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 15:49:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 15:49:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 15:49:11 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 15:49:11 symfony [info] {main} Set slot "title"
+Jan 03 15:49:11 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:11 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 15:49:11 symfony [info] {main} Get slot "title"
+Jan 03 15:49:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 15:49:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 15:49:11 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+Jan 03 15:49:11 symfony [info] {sfWebDebugLogger} Factories 5.19 ms (1)
+Jan 03 15:49:11 symfony [info] {sfWebDebugLogger} Action "project/index" 7.85 ms (1)
+Jan 03 15:49:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 15:49:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 5.47 ms (1)
+Jan 03 15:49:11 symfony [info] {sfWebResponse} Send content (40508 o)
+Jan 03 16:01:56 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:01:56 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:56 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:56 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:01:56 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:56 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:01:56 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:01:56 symfony [info] {main} Set slot "title"
+Jan 03 16:01:56 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:01:56 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:01:56 symfony [info] {main} Get slot "title"
+Jan 03 16:01:56 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:01:56 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:56 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (9)
+Jan 03 16:01:56 symfony [info] {sfWebDebugLogger} Factories 5.57 ms (1)
+Jan 03 16:01:56 symfony [info] {sfWebDebugLogger} Action "project/index" 8.27 ms (1)
+Jan 03 16:01:56 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:56 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.20 ms (1)
+Jan 03 16:01:56 symfony [info] {sfWebResponse} Send content (40540 o)
+Jan 03 16:01:57 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:01:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:57 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:57 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:57 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:01:57 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:01:57 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:01:57 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:01:57 symfony [info] {main} Get slot "title"
+Jan 03 16:01:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:01:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:57 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (9)
+Jan 03 16:01:57 symfony [info] {sfWebDebugLogger} Factories 8.07 ms (1)
+Jan 03 16:01:57 symfony [info] {sfWebDebugLogger} Action "project/show" 9.95 ms (1)
+Jan 03 16:01:57 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:57 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.54 ms (1)
+Jan 03 16:01:57 symfony [info] {sfWebResponse} Send content (44770 o)
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 7.62 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 103.03 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 108.52 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 50.94 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 10.29 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 191.59 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 44.76 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 261.77 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 51.92 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 353.92 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 46.84 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 6.52 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 505.89 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 35.30 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:01:58 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:01:58 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:01:58 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:01:58 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:01:58 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (8)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Factories 419.43 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Action "project/show" 31.41 ms (1)
+Jan 03 16:01:58 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:03:11 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:03:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:03:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:03:11 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:03:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:03:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:03:11 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:03:11 symfony [info] {main} Set slot "title"
+Jan 03 16:03:11 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:03:11 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:03:11 symfony [info] {main} Get slot "title"
+Jan 03 16:03:11 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:03:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:03:11 symfony [info] {sfWebDebugLogger} Configuration 1.53 ms (9)
+Jan 03 16:03:11 symfony [info] {sfWebDebugLogger} Factories 5.95 ms (1)
+Jan 03 16:03:11 symfony [info] {sfWebDebugLogger} Action "project/index" 9.64 ms (1)
+Jan 03 16:03:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:03:11 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.70 ms (1)
+Jan 03 16:03:11 symfony [info] {sfWebResponse} Send content (40508 o)
+Jan 03 16:03:12 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:03:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:03:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:03:13 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:03:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:03:13 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:03:13 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:03:13 symfony [info] {main} Set slot "title"
+Jan 03 16:03:13 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:03:13 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:03:13 symfony [info] {main} Get slot "title"
+Jan 03 16:03:13 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:03:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:03:13 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Jan 03 16:03:13 symfony [info] {sfWebDebugLogger} Factories 5.95 ms (1)
+Jan 03 16:03:13 symfony [info] {sfWebDebugLogger} Action "project/index" 8.21 ms (1)
+Jan 03 16:03:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:03:13 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.29 ms (1)
+Jan 03 16:03:13 symfony [info] {sfWebResponse} Send content (40508 o)
+Jan 03 16:05:41 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:05:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:41 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:05:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:05:41 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:05:41 symfony [info] {main} Set slot "title"
+Jan 03 16:05:41 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:41 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:41 symfony [info] {main} Get slot "title"
+Jan 03 16:05:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:05:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:41 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (9)
+Jan 03 16:05:41 symfony [info] {sfWebDebugLogger} Factories 7.54 ms (1)
+Jan 03 16:05:41 symfony [info] {sfWebDebugLogger} Action "project/index" 8.83 ms (1)
+Jan 03 16:05:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:41 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.27 ms (1)
+Jan 03 16:05:41 symfony [info] {sfWebResponse} Send content (40121 o)
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:05:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:46 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:46 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:05:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:05:46 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:46 symfony [info] {main} Get slot "title"
+Jan 03 16:05:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:05:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:46 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+Jan 03 16:05:46 symfony [info] {sfWebDebugLogger} Factories 6.31 ms (1)
+Jan 03 16:05:46 symfony [info] {sfWebDebugLogger} Action "project/show" 14.13 ms (1)
+Jan 03 16:05:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:46 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 6.48 ms (1)
+Jan 03 16:05:46 symfony [info] {sfWebResponse} Send content (44016 o)
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:05:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:46 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:46 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:05:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 38.30 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 48.55 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 116.61 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 36.86 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 194.54 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 34.61 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 259.69 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 36.93 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 308.43 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 33.43 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.21 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 426.28 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 31.97 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:47 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (8)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Factories 365.35 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Action "project/show" 33.47 ms (1)
+Jan 03 16:05:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:05:51 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:05:51 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:51 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:05:51 symfony [info] {main} Get slot "title"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 1.21 ms (9)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 5.17 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 11.05 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 7.42 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send content (44070 o)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:51 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (8)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 31.57 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 38.51 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:51 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (8)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 113.02 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 31.07 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:51 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 18.60 ms (8)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 201.56 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 40.53 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:51 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (8)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 297.44 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 100.42 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:51 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:51 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:51 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Configuration 1.29 ms (8)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Factories 463.73 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Action "project/show" 69.56 ms (1)
+Jan 03 16:05:51 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:52 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:52 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Configuration 1.30 ms (8)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Factories 599.53 ms (1)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Action "project/show" 40.70 ms (1)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:05:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:05:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:05:52 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:05:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:05:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:05:52 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:05:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:05:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (8)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Factories 584.73 ms (1)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Action "project/show" 36.04 ms (1)
+Jan 03 16:05:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:07:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:46 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:07:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:07:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:07:46 symfony [info] {main} Set slot "title"
+Jan 03 16:07:46 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:07:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:07:46 symfony [info] {main} Get slot "title"
+Jan 03 16:07:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:07:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:46 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (9)
+Jan 03 16:07:46 symfony [info] {sfWebDebugLogger} Factories 5.09 ms (1)
+Jan 03 16:07:46 symfony [info] {sfWebDebugLogger} Action "project/index" 8.55 ms (1)
+Jan 03 16:07:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:46 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.26 ms (1)
+Jan 03 16:07:46 symfony [info] {sfWebResponse} Send content (40201 o)
+Jan 03 16:07:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:07:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:07:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:07:48 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:07:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:07:48 symfony [info] {main} Get slot "title"
+Jan 03 16:07:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:07:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:48 symfony [info] {sfWebDebugLogger} Configuration 2.27 ms (9)
+Jan 03 16:07:48 symfony [info] {sfWebDebugLogger} Factories 7.98 ms (1)
+Jan 03 16:07:48 symfony [info] {sfWebDebugLogger} Action "project/show" 15.24 ms (1)
+Jan 03 16:07:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:48 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 8.09 ms (1)
+Jan 03 16:07:48 symfony [info] {sfWebResponse} Send content (43997 o)
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 6.00 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 67.93 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 5.16 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 87.47 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 38.69 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 13.35 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 163.84 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 41.68 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 1.13 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 261.34 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 35.74 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 1.28 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 336.11 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 40.37 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 444.61 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 39.51 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:07:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:07:49 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:07:49 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:07:49 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:07:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (8)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Factories 422.48 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Action "project/show" 41.26 ms (1)
+Jan 03 16:07:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:13:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:46 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:13:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:13:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:13:46 symfony [info] {main} Set slot "title"
+Jan 03 16:13:46 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:13:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:13:46 symfony [info] {main} Get slot "title"
+Jan 03 16:13:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:13:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:46 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (9)
+Jan 03 16:13:46 symfony [info] {sfWebDebugLogger} Factories 5.18 ms (1)
+Jan 03 16:13:46 symfony [info] {sfWebDebugLogger} Action "project/index" 7.53 ms (1)
+Jan 03 16:13:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:46 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.37 ms (1)
+Jan 03 16:13:46 symfony [info] {sfWebResponse} Send content (38335 o)
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:13:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:13:48 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:13:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:13:48 symfony [info] {main} Get slot "title"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.32 ms (9)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 7.17 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 10.46 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.11 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send content (39278 o)
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.16 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 5.83 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 66.41 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.19 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 86.78 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 47.27 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.24 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 152.03 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 57.97 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 297.36 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 36.90 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.08 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 332.60 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 40.03 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 409.80 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 37.27 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:13:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:13:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:13:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:13:48 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:13:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Configuration 1.73 ms (8)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Factories 436.44 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Action "project/show" 44.17 ms (1)
+Jan 03 16:13:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:22 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 16:20:22 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:22 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:22 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 16:20:22 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:22 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 16:20:22 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 16:20:22 symfony [info] {main} Set slot "title"
+Jan 03 16:20:22 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 16:20:22 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:20:22 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:20:22 symfony [info] {main} Get slot "title"
+Jan 03 16:20:22 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 16:20:22 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:20:22 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:22 symfony [info] {sfWebDebugLogger} Configuration 1.33 ms (9)
+Jan 03 16:20:22 symfony [info] {sfWebDebugLogger} Factories 7.10 ms (1)
+Jan 03 16:20:22 symfony [info] {sfWebDebugLogger} Action "project/index" 10.58 ms (1)
+Jan 03 16:20:22 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:22 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.87 ms (1)
+Jan 03 16:20:22 symfony [info] {sfWebResponse} Send content (38864 o)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 16:20:25 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 16:20:25 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 16:20:25 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:20:25 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 16:20:25 symfony [info] {main} Get slot "title"
+Jan 03 16:20:25 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 2.30 ms (9)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 9.53 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 17.25 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 7.69 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send content (39593 o)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_empty.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_empty.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_2.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_2.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_1.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_1.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_3.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_3.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star_half.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star_half.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/icon_star.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'icon_star.png' => true,)
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (8)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 27.78 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 49.49 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:25 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/images/fake_avatar_4.png with parameters array (  'module' => 'project',  'action' => 'show',  'id' => 'images',  'fake_avatar_4.png' => true,)
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (8)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 118.17 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 50.64 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 1.05 ms (8)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 216.93 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 46.96 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 1.22 ms (8)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 299.61 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 39.97 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:25 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:25 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Configuration 1.26 ms (8)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Factories 383.30 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Action "project/show" 37.62 ms (1)
+Jan 03 16:20:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+Jan 03 16:20:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:26 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:26 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Configuration 22.59 ms (8)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Factories 432.22 ms (1)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Action "project/show" 37.91 ms (1)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 16:20:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 16:20:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 16:20:26 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 16:20:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 16:20:26 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.text AS p__text, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (images)
+Jan 03 16:20:26 symfony [err] {sfError404Exception} This request has been forwarded to a 404 error page by the action "project/show".
+Jan 03 16:20:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 404 Not Found"
+Jan 03 16:20:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (8)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Factories 400.59 ms (1)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Action "project/show" 35.99 ms (1)
+Jan 03 16:20:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
