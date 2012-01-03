@@ -1,6 +1,6 @@
 <?php slot('title', $projects->getTitle()) ?>
 
-<?php slot('breadcrumbs', '<div id="breadcrumbs"><a href="#">Текущие задания</a> > </div><h2>' . $projects->getTitle() . '</h2>') ?>
+<?php slot('breadcrumbs', '<div id="breadcrumbs"><a href="' . url_for('project/index') . '">Текущие задания</a> > </div><h2>' . $projects->getTitle() . '</h2>') ?>
 
 <div id="mainContent">
 	<h1 class="contentHeader"><?php echo $projects->getTitle() ?></h1>

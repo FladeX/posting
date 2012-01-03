@@ -3974,3 +3974,297 @@ Jan 03 17:04:54 symfony [info] {sfWebDebugLogger} Action "project/show" 9.85 ms 
 Jan 03 17:04:54 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
 Jan 03 17:04:54 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.65 ms (1)
 Jan 03 17:04:54 symfony [info] {sfWebResponse} Send content (39366 o)
+Jan 03 17:06:15 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:06:15 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:15 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:15 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:06:15 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:15 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:06:15 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:06:15 symfony [info] {main} Set slot "title"
+Jan 03 17:06:15 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:15 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:15 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:15 symfony [info] {main} Get slot "title"
+Jan 03 17:06:15 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:15 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:15 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:15 symfony [info] {sfWebDebugLogger} Configuration 2.44 ms (9)
+Jan 03 17:06:15 symfony [info] {sfWebDebugLogger} Factories 8.39 ms (1)
+Jan 03 17:06:15 symfony [info] {sfWebDebugLogger} Action "project/index" 10.94 ms (1)
+Jan 03 17:06:15 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:15 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 7.04 ms (1)
+Jan 03 17:06:15 symfony [info] {sfWebResponse} Send content (39595 o)
+Jan 03 17:06:24 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 03 17:06:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:24 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 03 17:06:24 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 03 17:06:24 symfony [info] {sfPartialView} Render "/www/posting/apps/frontend/modules/project/templates/_form.php"
+Jan 03 17:06:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_name AS u__user_name, u.user_email AS u__user_email, u.user_status AS u__user_status, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM users u - ()
+Jan 03 17:06:24 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:24 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:24 symfony [info] {main} Get slot "title"
+Jan 03 17:06:24 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} Configuration 1.41 ms (9)
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} Factories 10.40 ms (1)
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} Action "project/new" 11.59 ms (1)
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 41.98 ms (1)
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} Partial "project/_form" 36.32 ms (1)
+Jan 03 17:06:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:24 symfony [info] {sfWebResponse} Send content (51659 o)
+Jan 03 17:06:26 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:06:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:26 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:06:26 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:26 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:06:26 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:06:26 symfony [info] {main} Set slot "title"
+Jan 03 17:06:26 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:26 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:26 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:26 symfony [info] {main} Get slot "title"
+Jan 03 17:06:26 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:26 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:26 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:26 symfony [info] {sfWebDebugLogger} Configuration 1.39 ms (9)
+Jan 03 17:06:26 symfony [info] {sfWebDebugLogger} Factories 5.01 ms (1)
+Jan 03 17:06:26 symfony [info] {sfWebDebugLogger} Action "project/index" 8.19 ms (1)
+Jan 03 17:06:26 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:26 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 6.97 ms (1)
+Jan 03 17:06:26 symfony [info] {sfWebResponse} Send content (39594 o)
+Jan 03 17:06:28 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/2 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '2',)
+Jan 03 17:06:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:28 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:06:28 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:28 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (2)
+Jan 03 17:06:28 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:06:28 symfony [info] {main} Set slot "title"
+Jan 03 17:06:28 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:28 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:28 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:28 symfony [info] {main} Get slot "title"
+Jan 03 17:06:28 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:28 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:28 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:28 symfony [info] {sfWebDebugLogger} Configuration 1.20 ms (9)
+Jan 03 17:06:28 symfony [info] {sfWebDebugLogger} Factories 5.12 ms (1)
+Jan 03 17:06:28 symfony [info] {sfWebDebugLogger} Action "project/show" 9.62 ms (1)
+Jan 03 17:06:28 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:28 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 6.04 ms (1)
+Jan 03 17:06:28 symfony [info] {sfWebResponse} Send content (39402 o)
+Jan 03 17:06:33 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:06:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:33 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:06:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:06:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:06:33 symfony [info] {main} Set slot "title"
+Jan 03 17:06:33 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:33 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:33 symfony [info] {main} Get slot "title"
+Jan 03 17:06:33 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:33 symfony [info] {sfWebDebugLogger} Configuration 1.36 ms (9)
+Jan 03 17:06:33 symfony [info] {sfWebDebugLogger} Factories 5.89 ms (1)
+Jan 03 17:06:33 symfony [info] {sfWebDebugLogger} Action "project/index" 10.29 ms (1)
+Jan 03 17:06:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 10.41 ms (1)
+Jan 03 17:06:33 symfony [info] {sfWebResponse} Send content (39596 o)
+Jan 03 17:06:35 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 17:06:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:35 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:06:35 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:35 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 17:06:35 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:06:35 symfony [info] {main} Set slot "title"
+Jan 03 17:06:35 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:35 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:35 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:35 symfony [info] {main} Get slot "title"
+Jan 03 17:06:35 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:35 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:35 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:35 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (9)
+Jan 03 17:06:35 symfony [info] {sfWebDebugLogger} Factories 4.96 ms (1)
+Jan 03 17:06:35 symfony [info] {sfWebDebugLogger} Action "project/show" 9.36 ms (1)
+Jan 03 17:06:35 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:35 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.87 ms (1)
+Jan 03 17:06:35 symfony [info] {sfWebResponse} Send content (39434 o)
+Jan 03 17:06:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:06:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:46 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:06:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:06:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:06:46 symfony [info] {main} Set slot "title"
+Jan 03 17:06:46 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:46 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:46 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:46 symfony [info] {main} Get slot "title"
+Jan 03 17:06:46 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:46 symfony [info] {sfWebDebugLogger} Configuration 1.31 ms (9)
+Jan 03 17:06:46 symfony [info] {sfWebDebugLogger} Factories 5.76 ms (1)
+Jan 03 17:06:46 symfony [info] {sfWebDebugLogger} Action "project/index" 8.81 ms (1)
+Jan 03 17:06:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:46 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 15.62 ms (1)
+Jan 03 17:06:46 symfony [info] {sfWebResponse} Send content (39595 o)
+Jan 03 17:06:48 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/2 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '2',)
+Jan 03 17:06:48 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:48 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:48 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:06:48 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:48 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (2)
+Jan 03 17:06:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:06:48 symfony [info] {main} Set slot "title"
+Jan 03 17:06:48 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:48 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:48 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:48 symfony [info] {main} Get slot "title"
+Jan 03 17:06:48 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:48 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:48 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:48 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (9)
+Jan 03 17:06:48 symfony [info] {sfWebDebugLogger} Factories 6.30 ms (1)
+Jan 03 17:06:48 symfony [info] {sfWebDebugLogger} Action "project/show" 10.74 ms (1)
+Jan 03 17:06:48 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:48 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 6.64 ms (1)
+Jan 03 17:06:48 symfony [info] {sfWebResponse} Send content (39403 o)
+Jan 03 17:06:50 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:06:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:50 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:06:50 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:50 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:06:50 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:06:50 symfony [info] {main} Set slot "title"
+Jan 03 17:06:50 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:50 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:50 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:50 symfony [info] {main} Get slot "title"
+Jan 03 17:06:50 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:50 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:50 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:50 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (9)
+Jan 03 17:06:50 symfony [info] {sfWebDebugLogger} Factories 6.76 ms (1)
+Jan 03 17:06:50 symfony [info] {sfWebDebugLogger} Action "project/index" 10.22 ms (1)
+Jan 03 17:06:50 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:50 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 16.11 ms (1)
+Jan 03 17:06:50 symfony [info] {sfWebResponse} Send content (39596 o)
+Jan 03 17:06:52 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 17:06:52 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:06:52 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:06:52 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:06:52 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:06:52 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 17:06:52 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:06:52 symfony [info] {main} Set slot "title"
+Jan 03 17:06:52 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:06:52 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:52 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:06:52 symfony [info] {main} Get slot "title"
+Jan 03 17:06:52 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:06:52 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:06:52 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:06:52 symfony [info] {sfWebDebugLogger} Configuration 1.40 ms (9)
+Jan 03 17:06:52 symfony [info] {sfWebDebugLogger} Factories 7.15 ms (1)
+Jan 03 17:06:52 symfony [info] {sfWebDebugLogger} Action "project/show" 14.41 ms (1)
+Jan 03 17:06:52 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:06:52 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 7.49 ms (1)
+Jan 03 17:06:52 symfony [info] {sfWebResponse} Send content (39435 o)
+Jan 03 17:08:30 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 17:08:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:08:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:08:30 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:08:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:08:30 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 17:08:30 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:08:30 symfony [info] {main} Set slot "title"
+Jan 03 17:08:30 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:08:30 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:30 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:30 symfony [info] {main} Get slot "title"
+Jan 03 17:08:30 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:08:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:08:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:08:30 symfony [info] {sfWebDebugLogger} Configuration 1.38 ms (9)
+Jan 03 17:08:30 symfony [info] {sfWebDebugLogger} Factories 8.63 ms (1)
+Jan 03 17:08:30 symfony [info] {sfWebDebugLogger} Action "project/show" 13.39 ms (1)
+Jan 03 17:08:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:08:30 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 13.03 ms (1)
+Jan 03 17:08:30 symfony [info] {sfWebResponse} Send content (39428 o)
+Jan 03 17:08:33 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/new with parameters array (  'module' => 'project',  'action' => 'new',)
+Jan 03 17:08:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:08:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:08:33 symfony [info] {projectActions} Call "projectActions->executeNew()"
+Jan 03 17:08:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/newSuccess.php"
+Jan 03 17:08:33 symfony [info] {sfPartialView} Render "/www/posting/apps/frontend/modules/project/templates/_form.php"
+Jan 03 17:08:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:08:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT u.id AS u__id, u.user_name AS u__user_name, u.user_email AS u__user_email, u.user_status AS u__user_status, u.created_at AS u__created_at, u.updated_at AS u__updated_at FROM users u - ()
+Jan 03 17:08:33 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:33 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:33 symfony [info] {main} Get slot "title"
+Jan 03 17:08:33 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:08:33 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:08:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} Configuration 1.25 ms (9)
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} Factories 5.08 ms (1)
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} Action "project/new" 10.23 ms (1)
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} View "Success" for "project/new" 37.38 ms (1)
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} Partial "project/_form" 32.22 ms (1)
+Jan 03 17:08:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+Jan 03 17:08:33 symfony [info] {sfWebResponse} Send content (51667 o)
+Jan 03 17:08:47 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /project/show/id/1 with parameters array (  'module' => 'project',  'action' => 'show',  'id' => '1',)
+Jan 03 17:08:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:08:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:08:47 symfony [info] {projectActions} Call "projectActions->executeShow()"
+Jan 03 17:08:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:08:47 symfony [info] {Doctrine_Connection_Statement} execute : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p WHERE (p.id = ?) LIMIT 1 - (1)
+Jan 03 17:08:47 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/showSuccess.php"
+Jan 03 17:08:47 symfony [info] {main} Set slot "title"
+Jan 03 17:08:47 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:08:47 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:47 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:47 symfony [info] {main} Get slot "title"
+Jan 03 17:08:47 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:08:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:08:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:08:47 symfony [info] {sfWebDebugLogger} Configuration 1.15 ms (9)
+Jan 03 17:08:47 symfony [info] {sfWebDebugLogger} Factories 5.21 ms (1)
+Jan 03 17:08:47 symfony [info] {sfWebDebugLogger} Action "project/show" 9.42 ms (1)
+Jan 03 17:08:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:08:47 symfony [info] {sfWebDebugLogger} View "Success" for "project/show" 5.79 ms (1)
+Jan 03 17:08:47 symfony [info] {sfWebResponse} Send content (39422 o)
+Jan 03 17:08:49 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /project with parameters array (  'module' => 'project',  'action' => 'index',)
+Jan 03 17:08:49 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Jan 03 17:08:49 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Jan 03 17:08:49 symfony [info] {projectActions} Call "projectActions->executeIndex()"
+Jan 03 17:08:49 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 03 17:08:49 symfony [info] {Doctrine_Connection_Mysql} query : SELECT p.id AS p__id, p.author_id AS p__author_id, p.title AS p__title, p.text AS p__text, p.price AS p__price, p.views_users AS p__views_users, p.views_guests AS p__views_guests, p.status AS p__status, p.created_at AS p__created_at, p.updated_at AS p__updated_at FROM projects p - ()
+Jan 03 17:08:49 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/modules/project/templates/indexSuccess.php"
+Jan 03 17:08:49 symfony [info] {main} Set slot "title"
+Jan 03 17:08:49 symfony [info] {main} Set slot "breadcrumbs"
+Jan 03 17:08:49 symfony [info] {sfPHPView} Decorate content with "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:49 symfony [info] {sfPHPView} Render "/www/posting/apps/frontend/templates/layout.php"
+Jan 03 17:08:49 symfony [info] {main} Get slot "title"
+Jan 03 17:08:49 symfony [info] {main} Get slot "breadcrumbs"
+Jan 03 17:08:49 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Jan 03 17:08:49 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Jan 03 17:08:49 symfony [info] {sfWebDebugLogger} Configuration 1.35 ms (9)
+Jan 03 17:08:49 symfony [info] {sfWebDebugLogger} Factories 62.68 ms (1)
+Jan 03 17:08:49 symfony [info] {sfWebDebugLogger} Action "project/index" 10.40 ms (1)
+Jan 03 17:08:49 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Jan 03 17:08:49 symfony [info] {sfWebDebugLogger} View "Success" for "project/index" 8.67 ms (1)
+Jan 03 17:08:49 symfony [info] {sfWebResponse} Send content (39595 o)
