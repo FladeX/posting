@@ -1,7 +1,7 @@
-<?php slot('breadcrumbs', '<div id="breadcrumbs"><a href="#">Текущие задания</a> > </div><h2>Статья ко дню космонавтики</h2>') ?>
+<?php slot('breadcrumbs', '<div id="breadcrumbs"><a href="#">Текущие задания</a> > </div><h2>' . $projects->getTitle() . '</h2>') ?>
 
 <div id="mainContent">
-	<h1 class="contentHeader">Статья ко Дню космонавтики</h1>
+	<h1 class="contentHeader"><?php echo $projects->getTitle() ?></h1>
 
 	<div id="sidebar">
 		<div class="sidebarBlock customer">

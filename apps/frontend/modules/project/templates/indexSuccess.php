@@ -136,7 +136,10 @@
 		<td>
 			<span class="date">[<?php echo $projects->getDateTimeObject('created_at')->format('d.m.Y/h:m') ?>]</span>
 			<span class="title">
-				<a href="<?php echo url_for('project/show?id='.$projects->getId()) ?>"><?php echo $projects->getText() ?></a>
+				<a href="<?php echo url_for('project/show?id='.$projects->getId()) ?>"><?php echo $projects->getTitle() ?></a>
+			</span>
+			<span class="description">
+				<?php echo $projects->getText() ?>
 			</span>
 		</td>
 		<td class="value">120</td>

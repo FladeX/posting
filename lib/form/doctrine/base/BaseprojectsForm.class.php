@@ -17,6 +17,7 @@ abstract class BaseprojectsForm extends BaseFormDoctrine
     $this->setWidgets(array(
       'id'         => new sfWidgetFormInputHidden(),
       'author_id'  => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('users'), 'add_empty' => false)),
+      'title'      => new sfWidgetFormInputText(),
       'text'       => new sfWidgetFormTextarea(),
       'status'     => new sfWidgetFormInputText(),
       'created_at' => new sfWidgetFormDateTime(),
@@ -26,6 +27,7 @@ abstract class BaseprojectsForm extends BaseFormDoctrine
     $this->setValidators(array(
       'id'         => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
       'author_id'  => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('users'))),
+      'title'      => new sfValidatorString(array('max_length' => 255)),
       'text'       => new sfValidatorString(array('max_length' => 4000, 'required' => false)),
       'status'     => new sfValidatorInteger(array('required' => false)),
       'created_at' => new sfValidatorDateTime(),
