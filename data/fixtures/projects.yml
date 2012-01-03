@@ -14,3 +14,84 @@ projects:
         views_users:    3
         views_guests:   0
         status:         0
+
+    project_3:
+        author_id:      2
+        title:          Срочно наполнить форум!
+        text:           Форум всё обо всём, надо срочно наполнить!
+        price:          300
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_4:
+        author_id:      3
+        title:          Сельскохозяйственный форум
+        text:           Форум про колхозы и совхозы
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_5:
+        author_id:      1
+        title:          Форум про животных
+        text:           Наши домашние любимцы
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_6:
+        author_id:      2
+        title:          Срочно наполнить форум!
+        text:           Форум всё обо всём, надо срочно наполнить!
+        price:          300
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_7:
+        author_id:      3
+        title:          Сельскохозяйственный форум
+        text:           Форум про колхозы и совхозы
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_8:
+        author_id:      1
+        title:          Форум про животных
+        text:           Наши домашние любимцы
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_9:
+        author_id:      2
+        title:          Форум бизнесменов
+        text:           Как заработать много денег, как стать успешным
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_10:
+        author_id:      1
+        title:          Форум шахматистов
+        text:           Лучший форум о старейшей игре. Срочно нужно 1000 сообщений!
+        price:          999
+        views_users:    23
+        views_guests:   78
+        status:         1
+    project_11:
+        author_id:      2
+        title:          Форум бизнесменов
+        text:           Как заработать много денег, как стать успешным
+        price:          420
+        views_users:    52
+        views_guests:   4235
+        status:         1
+    project_12:
+        author_id:      1
+        title:          Форум шахматистов
+        text:           Лучший форум о старейшей игре. Срочно нужно 1000 сообщений!
+        price:          999
+        views_users:    23
+        views_guests:   78
+        status:         1
