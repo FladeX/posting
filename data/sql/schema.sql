@@ -1,0 +1,18 @@
+CREATE TABLE badges (id BIGINT AUTO_INCREMENT, user_id BIGINT NOT NULL, badges_id BIGINT NOT NULL, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX user_id_idx (user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE bids (id BIGINT AUTO_INCREMENT, user_id BIGINT NOT NULL, project_id BIGINT NOT NULL, text TEXT, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX project_id_idx (project_id), INDEX user_id_idx (user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE login_history (id BIGINT AUTO_INCREMENT, user_id BIGINT NOT NULL, user_ip VARCHAR(255) NOT NULL, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX user_id_idx (user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE payments (id BIGINT AUTO_INCREMENT, sum FLOAT(18, 2) NOT NULL, user_id BIGINT NOT NULL, type VARCHAR(255) NOT NULL, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX user_id_idx (user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE projects (id BIGINT AUTO_INCREMENT, author_id BIGINT NOT NULL, text TEXT, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX author_id_idx (author_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE reports (id BIGINT AUTO_INCREMENT, user_id BIGINT NOT NULL, project_id BIGINT NOT NULL, posting_name VARCHAR(255) NOT NULL, posting_password VARCHAR(255) NOT NULL, posting_messages BIGINT NOT NULL, posting_date DATETIME NOT NULL, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX project_id_idx (project_id), INDEX user_id_idx (user_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE reviews (id BIGINT AUTO_INCREMENT, author_id BIGINT NOT NULL, recepient_id BIGINT NOT NULL, text TEXT NOT NULL, type TINYINT(1) DEFAULT '1' NOT NULL, status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, INDEX recepient_id_idx (recepient_id), PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE search_history (id BIGINT AUTO_INCREMENT, query VARCHAR(255) NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+CREATE TABLE users (id BIGINT AUTO_INCREMENT, user_name VARCHAR(255) NOT NULL, user_email VARCHAR(255) NOT NULL, user_status BIGINT DEFAULT 0 NOT NULL, created_at DATETIME NOT NULL, updated_at DATETIME NOT NULL, PRIMARY KEY(id)) ENGINE = INNODB;
+ALTER TABLE badges ADD CONSTRAINT badges_user_id_users_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE bids ADD CONSTRAINT bids_user_id_users_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE bids ADD CONSTRAINT bids_project_id_projects_id FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE SET NULL;
+ALTER TABLE login_history ADD CONSTRAINT login_history_user_id_users_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE payments ADD CONSTRAINT payments_user_id_users_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE projects ADD CONSTRAINT projects_author_id_users_id FOREIGN KEY (author_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE reports ADD CONSTRAINT reports_user_id_users_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL;
+ALTER TABLE reports ADD CONSTRAINT reports_project_id_projects_id FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE SET NULL;
+ALTER TABLE reviews ADD CONSTRAINT reviews_recepient_id_users_id FOREIGN KEY (recepient_id) REFERENCES users(id) ON DELETE SET NULL;
