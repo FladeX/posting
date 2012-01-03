@@ -1,0 +1,85 @@
+login_history:
+    actAs: { Timestampable: ~ }
+    columns:
+        user_id:    { type: integer, notnull: true }
+        user_ip:    { type: string(255), notnull: true }
+        status:     { type: integer, notnull: true, default: 0 }
+    relations:
+        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+
+search_history:
+    actAs: { Timestampable: ~ }
+    columns:
+        query:      { type: string(255), notnull: true }
+
+payments:
+    actAs: { Timestampable: ~ }
+    columns:
+        sum:        { type: integer, notnull: true }
+        user_id:    { type: integer, notnull: true }
+        type:       { type: string(255), notnull: true }
+        status:     { type: integer, notnull: true, default: 0 }
+    relations:
+        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+
+reviews:
+    actAs: { Timestampable: ~ }
+    columns:
+        author_id:      { type: integer, notnull: true }
+        recepient_id:   { type: integer, notnull: true }
+        text:           { type: string(4000), notnull: true }
+        type:           { type: boolean, notnull: true, default: 1 }
+        status:         { type: integer, notnull: true, default: 0 }
+    relations:
+        users:          { onDelete: SET NULL, local: author_id, foreign: id, foreignAlias: users }
+        users:          { onDelete: SET NULL, local: recepient_id, foreign: id, foreignAlias: users }
+
+badges:
+    actAs: { Timestampable: ~ }
+    columns:
+        user_id:    { type: integer, notnull: true }
+        badges_id:  { type: integer, notnull: true }
+        status:     { type: integer, notnull: true, default: 0 }
+    relations:
+        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+
+reports:
+    actAs: { Timestampable: ~ }
+    columns:
+        user_id:            { type: integer, notnull: true }
+        project_id:         { type: integer, notnull: true }
+        posting_name:       { type: string(255), notnull: true }
+        posting_password:   { type: string(255), notnull: true }
+        posting_messages:   { type: integer, notnull: true }
+        posting_date:       { type: timestamp, notnull: true }
+        status:             { type: integer, notnull: true, default: 0 }
+    relations:
+        projects:           { onDelete: SET NULL, local: project_id, foreign: id, foreignAlias: projects }
+        users:              { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+
+bids:
+    actAs: { Timestampable: ~ }
+    columns:
+        user_id:    { type: integer, notnull: true }
+        project_id: { type: integer, notnull: true }
+        text:       { type: string(4000), notnull: false }
+        status:     { type: integer, notnull: true, default: 0 }
+    relations:
+        projects:   { onDelete: SET NULL, local: project_id, foreign: id, foreignAlias: projects }
+        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+
+projects:
+    actAs: { Timestampable: ~ }
+    columns:
+        author_id:  { type: integer, notnull: true }
+        text:       { type: string(4000), notnull: false }
+        status:     { type: integer, notnull: true, default: 0 }
+    relations:
+        users:      { onDelete: SET NULL, local: author_id, foreign: id, foreignAlias: users }
+
+users:
+    actAs: { Timestampable: ~ }
+    columns:
+        user_name:      { type: string(255), notnull: true }
+        user_email:     { type: string(255), notnull: true }
+        user_status:    { type: integer, notnull: true, default: 0 }
