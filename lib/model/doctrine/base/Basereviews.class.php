@@ -66,7 +66,7 @@ abstract class Basereviews extends sfDoctrineRecord
         $this->hasOne('users', array(
              'local' => 'recepient_id',
              'foreign' => 'id',
-             'onDelete' => 'SET NULL'));
+             'onDelete' => 'CASCADE'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

@@ -54,7 +54,7 @@ abstract class Baseprojects extends sfDoctrineRecord
         $this->hasOne('users', array(
              'local' => 'author_id',
              'foreign' => 'id',
-             'onDelete' => 'SET NULL'));
+             'onDelete' => 'CASCADE'));
 
         $this->hasMany('reports as projects', array(
              'local' => 'id',

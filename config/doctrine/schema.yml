@@ -5,7 +5,7 @@ login_history:
         user_ip:    { type: string(255), notnull: true }
         status:     { type: integer, notnull: true, default: 0 }
     relations:
-        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+        users:      { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: users }
 
 search_history:
     actAs: { Timestampable: ~ }
@@ -20,7 +20,7 @@ payments:
         type:       { type: string(255), notnull: true }
         status:     { type: integer, notnull: true, default: 0 }
     relations:
-        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+        users:      { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: users }
 
 reviews:
     actAs: { Timestampable: ~ }
@@ -31,8 +31,8 @@ reviews:
         type:           { type: boolean, notnull: true, default: 1 }
         status:         { type: integer, notnull: true, default: 0 }
     relations:
-        users:          { onDelete: SET NULL, local: author_id, foreign: id, foreignAlias: users }
-        users:          { onDelete: SET NULL, local: recepient_id, foreign: id, foreignAlias: users }
+        users:          { onDelete: CASCADE, local: author_id, foreign: id, foreignAlias: users }
+        users:          { onDelete: CASCADE, local: recepient_id, foreign: id, foreignAlias: users }
 
 badges:
     actAs: { Timestampable: ~ }
@@ -41,7 +41,7 @@ badges:
         badges_id:  { type: integer, notnull: true }
         status:     { type: integer, notnull: true, default: 0 }
     relations:
-        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+        users:      { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: users }
 
 reports:
     actAs: { Timestampable: ~ }
@@ -54,8 +54,8 @@ reports:
         posting_date:       { type: timestamp, notnull: true }
         status:             { type: integer, notnull: true, default: 0 }
     relations:
-        projects:           { onDelete: SET NULL, local: project_id, foreign: id, foreignAlias: projects }
-        users:              { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+        projects:           { onDelete: CASCADE, local: project_id, foreign: id, foreignAlias: projects }
+        users:              { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: users }
 
 bids:
     actAs: { Timestampable: ~ }
@@ -65,8 +65,8 @@ bids:
         text:       { type: string(4000), notnull: false }
         status:     { type: integer, notnull: true, default: 0 }
     relations:
-        projects:   { onDelete: SET NULL, local: project_id, foreign: id, foreignAlias: projects }
-        users:      { onDelete: SET NULL, local: user_id, foreign: id, foreignAlias: users }
+        projects:   { onDelete: CASCADE, local: project_id, foreign: id, foreignAlias: projects }
+        users:      { onDelete: CASCADE, local: user_id, foreign: id, foreignAlias: users }
 
 projects:
     actAs: { Timestampable: ~ }
@@ -75,7 +75,7 @@ projects:
         text:       { type: string(4000), notnull: false }
         status:     { type: integer, notnull: true, default: 0 }
     relations:
-        users:      { onDelete: SET NULL, local: author_id, foreign: id, foreignAlias: users }
+        users:      { onDelete: CASCADE, local: author_id, foreign: id, foreignAlias: users }
 
 users:
     actAs: { Timestampable: ~ }

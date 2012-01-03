@@ -51,7 +51,7 @@ abstract class Baselogin_history extends sfDoctrineRecord
         $this->hasOne('users', array(
              'local' => 'user_id',
              'foreign' => 'id',
-             'onDelete' => 'SET NULL'));
+             'onDelete' => 'CASCADE'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);

@@ -61,12 +61,12 @@ abstract class Basebids extends sfDoctrineRecord
         $this->hasOne('projects', array(
              'local' => 'project_id',
              'foreign' => 'id',
-             'onDelete' => 'SET NULL'));
+             'onDelete' => 'CASCADE'));
 
         $this->hasOne('users', array(
              'local' => 'user_id',
              'foreign' => 'id',
-             'onDelete' => 'SET NULL'));
+             'onDelete' => 'CASCADE'));
 
         $timestampable0 = new Doctrine_Template_Timestampable();
         $this->actAs($timestampable0);
