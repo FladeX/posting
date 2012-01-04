@@ -1,24 +1,33 @@
 <?php use_stylesheets_for_form($form) ?>
 <?php use_javascripts_for_form($form) ?>
 
-<form action="<?php echo url_for('projects/'.($form->getObject()->isNew() ? 'create' : 'update').(!$form->getObject()->isNew() ? '?id='.$form->getObject()->getId() : '')) ?>" method="post" <?php $form->isMultipart() and print 'enctype="multipart/form-data" ' ?>>
-<?php if (!$form->getObject()->isNew()): ?>
-<input type="hidden" name="sf_method" value="put" />
-<?php endif; ?>
-  <table>
-    <tfoot>
-      <tr>
-        <td colspan="2">
-          &nbsp;<a href="<?php echo url_for('projects/index') ?>">Back to list</a>
-          <?php if (!$form->getObject()->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'projects/delete?id='.$form->getObject()->getId(), array('method' => 'delete', 'confirm' => 'Are you sure?')) ?>
-          <?php endif; ?>
-          <input type="submit" value="Save" />
-        </td>
-      </tr>
-    </tfoot>
-    <tbody>
-      <?php echo $form ?>
-    </tbody>
-  </table>
+<?php slot('title', 'Добавление проекта - posting.ru') ?>
+
+<?php slot('breadcrumbs', '<h2>Добавление проекта</h2> ') ?>
+
+<?php echo form_tag_for($form, '@projects') ?>
+  <div class="fieldsContainer">
+		<?php echo $form['title']->renderLabel() ?>
+		<?php echo $form['title']->render() ?>
+		<div class="help">
+			<?php echo $form['title']->renderError() ?>
+		</div>
+  </div>
+  <div class="fieldsContainer">
+		<?php echo $form['text']->renderLabel() ?>
+		<?php echo $form['text']->render() ?>
+		<div class="help">
+			<?php echo $form['text']->renderError() ?>
+		</div>
+  </div>
+  <div class="fieldsContainer">
+		<?php echo $form['price']->renderLabel() ?>
+		<?php echo $form['price']->render() ?>
+		<div class="help">
+			<?php echo $form['price']->renderError() ?>
+		</div>
+  </div>
+  <div id="licenceFields" class="fieldsContainer">
+	<input id="registerButton" type="submit" value="Добавить" />
+  </div>
 </form>
