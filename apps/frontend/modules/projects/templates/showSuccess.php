@@ -31,8 +31,8 @@
 			<tr>
 				<td>Открыт до:</td>
 				<td class="value">
-					5.03.2011 <br />
-					осталось 12 ч. 35 мин.
+					<?php echo $projects->getDateTimeObject('expired_at')->format('d.m.Y') ?> <br />
+					осталось <?php echo $project_timeleft ?>
 				</td>
 			</tr>
 			<tr>
