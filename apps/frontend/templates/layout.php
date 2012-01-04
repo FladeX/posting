@@ -14,7 +14,7 @@
     <div class="overlay"></div>
     <div class="content">
         <h1>
-            <img src="/images/main_logo.png" alt="Posting.ru" />
+            <a href="<?php echo url_for('@homepage') ?>"><img src="/images/main_logo.png" alt="Posting.ru" /></a>
         </h1>
 
         <div id="mainHeaderLogin">
