@@ -21,9 +21,9 @@ show_projects:
         id:         \d+
         sf_method:  [get]
 
-#default_index:
-#  url:   /:module
-#  param: { action: index }
-#
-#default:
-#  url:   /:module/:action/*
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

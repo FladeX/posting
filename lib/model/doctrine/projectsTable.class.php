@@ -12,8 +12,16 @@ class projectsTable extends Doctrine_Table
      *
      * @return object projectsTable
      */
-    public static function getInstance()
-    {
-        return Doctrine_Core::getTable('projects');
-    }
+	public function getActiveProjects($per_page = 2)
+	{
+		$q = $this->createQuery('p')
+			->where('p.status <> 0')
+			->limit($per_page);
+
+		return $q->execute();
+	}
+    //public static function getInstance()
+    //{
+    //    return Doctrine_Core::getTable('projects');
+    //}
 }

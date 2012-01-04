@@ -131,18 +131,18 @@
 	</thead>
 	<tbody>
 
-	<?php foreach ($projectss as $i => $projects): ?>
+	<?php foreach ($projects as $i => $project): ?>
 	<tr class="<?php echo fmod($i, 2) ? 'even' : 'odd' ?>">
 		<td>
-			<span class="date">[<?php echo $projects->getDateTimeObject('created_at')->format('d.m.Y/h:m') ?>]</span>
+			<span class="date">[<?php echo $project->getDateTimeObject('created_at')->format('d.m.Y/h:m') ?>]</span>
 			<span class="title">
-				<a href="<?php echo url_for('projects/show?id='.$projects->getId()) ?>"><?php echo $projects->getTitle() ?></a>
+				<a href="<?php echo url_for('projects/show?id='.$project->getId()) ?>"><?php echo $project->getTitle() ?></a>
 			</span>
 			<span class="description">
-				<?php echo $projects->getText() ?>
+				<?php echo $project->getText() ?>
 			</span>
 		</td>
-		<td class="value"><?php echo $projects->getPrice() ?></td>
+		<td class="value"><?php echo $project->getPrice() ?></td>
 		<td class="value last">2</td>
 	</tr>
 	<?php endforeach; ?>

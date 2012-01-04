@@ -12,11 +12,7 @@ class projectsActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-	$q = Doctrine_Query::create()
-		->from('projects p')
-		->where('p.status <> 0');
-
-	$this->projectss = $q->execute();
+	$this->projects = Doctrine_Core::getTable('projects')->getActiveProjects(sfConfig::get('app_projects_per_page'));
   }
 
   public function executeShow(sfWebRequest $request)
