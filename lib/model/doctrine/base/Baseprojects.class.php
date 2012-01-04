@@ -12,6 +12,7 @@
  * @property integer $views_users
  * @property integer $views_guests
  * @property integer $status
+ * @property timestamp $expired_at
  * @property users $users
  * @property Doctrine_Collection $projects
  * 
@@ -22,6 +23,7 @@
  * @method integer             getViewsUsers()   Returns the current record's "views_users" value
  * @method integer             getViewsGuests()  Returns the current record's "views_guests" value
  * @method integer             getStatus()       Returns the current record's "status" value
+ * @method timestamp           getExpiredAt()    Returns the current record's "expired_at" value
  * @method users               getUsers()        Returns the current record's "users" value
  * @method Doctrine_Collection getProjects()     Returns the current record's "projects" collection
  * @method projects            setAuthorId()     Sets the current record's "author_id" value
@@ -31,6 +33,7 @@
  * @method projects            setViewsUsers()   Sets the current record's "views_users" value
  * @method projects            setViewsGuests()  Sets the current record's "views_guests" value
  * @method projects            setStatus()       Sets the current record's "status" value
+ * @method projects            setExpiredAt()    Sets the current record's "expired_at" value
  * @method projects            setUsers()        Sets the current record's "users" value
  * @method projects            setProjects()     Sets the current record's "projects" collection
  * 
@@ -74,6 +77,10 @@ abstract class Baseprojects extends sfDoctrineRecord
              'type' => 'integer',
              'notnull' => true,
              'default' => 0,
+             ));
+        $this->hasColumn('expired_at', 'timestamp', null, array(
+             'type' => 'timestamp',
+             'notnull' => true,
              ));
     }
 

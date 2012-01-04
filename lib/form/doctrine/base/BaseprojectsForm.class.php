@@ -23,6 +23,7 @@ abstract class BaseprojectsForm extends BaseFormDoctrine
       'views_users'  => new sfWidgetFormInputText(),
       'views_guests' => new sfWidgetFormInputText(),
       'status'       => new sfWidgetFormInputText(),
+      'expired_at'   => new sfWidgetFormDateTime(),
       'created_at'   => new sfWidgetFormDateTime(),
       'updated_at'   => new sfWidgetFormDateTime(),
     ));
@@ -36,6 +37,7 @@ abstract class BaseprojectsForm extends BaseFormDoctrine
       'views_users'  => new sfValidatorInteger(array('required' => false)),
       'views_guests' => new sfValidatorInteger(array('required' => false)),
       'status'       => new sfValidatorInteger(array('required' => false)),
+      'expired_at'   => new sfValidatorDateTime(),
       'created_at'   => new sfValidatorDateTime(),
       'updated_at'   => new sfValidatorDateTime(),
     ));
