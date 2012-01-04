@@ -7,9 +7,22 @@
  * 
  * @package    posting
  * @subpackage model
- * @author     Your name here
+ * @author     Max Istlyaev
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
  */
 class projects extends Baseprojects
 {
+  public function getActiveProjects($max = 10)
+  {
+	$q = $this->getActiveProjectsQuery()
+		->limit($max);
+ 
+	return $q->execute();
+  }
+
+  public function countActiveProjects()
+  {
+	return $this->getActiveProjectsQuery()->count();
+  }
+
 }

@@ -12,7 +12,15 @@ class projectsActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-	$this->projects = Doctrine_Core::getTable('projects')->getActiveProjects(sfConfig::get('app_projects_per_page'));
+	$this->projects = Doctrine_Core::getTable('projects')->getActiveProjects();
+
+	$this->pager = new sfDoctrinePager(
+		'projects',
+		sfConfig::get('app_projects_per_page')
+	);
+	//$this->pager->setQuery($this->projects->getActiveProjectsQuery());
+	$this->pager->setPage($request->getParameter('page', 1));
+	$this->pager->init();
   }
 
   public function executeShow(sfWebRequest $request)

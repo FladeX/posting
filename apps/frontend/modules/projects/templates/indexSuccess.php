@@ -115,29 +115,36 @@
 		</ul>
 	</div>
 
-	<?php include_partial('projects/list', array('projects' => $projects)) ?>
+	<?php include_partial('projects/list', array('projects' => $pager->getResults())) ?>
 
+	<?php if ($pager->haveToPaginate()): ?>
 	<div id="paging">
 		<div class="numbers">
-			<span class="current">1</span>
-			<a href="#">2</a>
-			<a href="#">3</a>
-			<a href="#">4</a>
-			<a href="#">5</a>
-			<a href="#">6</a>
-			<a href="#">7</a>
-			<a href="#">8</a>
-			<a href="#">9</a>
-			<a href="#">10</a>
-			<span>...</span>
-			<a href="#">25</a>
+			<?php foreach ($pager->getLinks() as $page): ?>
+				<?php if ($page == $pager->getPage()): ?>
+					<span class="current"><?php echo $page ?></span>
+				<?php else: ?>
+					<a href="<?php echo url_for('projects', $projects) ?>page=<?php echo $page ?>"><?php echo $page ?></a>
+				<?php endif; ?>
+			<?php endforeach; ?>
 		</div>
 		<div class="keys">
 			<div class="next">
-				<a href="#">следующая</a>
+				<?php if ($pager->getPage() != $pager->getNextPage()): ?>
+					<a href="<?php echo url_for('projects', $projects) ?>page=<?php echo $pager->getNextPage() ?>">следующая</a>
+				<?php else: ?>
+					следующая
+				<?php endif; ?>
 			</div>
-			<div class="prev">предыдущая</div>
+			<div class="prev">
+				<?php if ($pager->getPage() != $pager->getPreviousPage()): ?>
+					<a href="<?php echo url_for('projects', $projects) ?>page=<?php echo $pager->getPreviousPage() ?>">предыдущая</a>
+				<?php else: ?>
+					предыдущая
+				<?php endif; ?>
+			</div>
 		</div>
-	</div>
+	</div><!-- #paging -->
+	<?php endif; ?>
 
 </div><!-- #primaryContent -->

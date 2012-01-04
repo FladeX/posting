@@ -12,16 +12,43 @@ class projectsTable extends Doctrine_Table
      *
      * @return object projectsTable
      */
-	public function getActiveProjects($per_page = 2)
-	{
-		$q = $this->createQuery('p')
-			->where('p.status <> 0')
-			->limit($per_page);
+  public function retrieveActiveProjects(Doctrine_Query $q)
+  {
+	return $this->addActiveProjectsQuery($q)->fetchOne();
+  }
 
-		return $q->execute();
+  public function getActiveProjects(Doctrine_Query $q = null)
+  {
+	return $this->addActiveProjectsQuery($q)->execute();
+  }
+
+  public function getActiveProjectsQuery()
+  {
+	$q = Doctrine_Query::create()
+		->from('projects p')
+		->where('p.status <> 0', $this->getId());
+ 
+	return Doctrine_Core::getTable('projects')->addActiveProjectsQuery($q);
+  }
+ 
+  public function countActiveProjects(Doctrine_Query $q = null)
+  {
+	return $this->addActiveProjectsQuery($q)->count();
+  }
+ 
+  public function addActiveProjectsQuery(Doctrine_Query $q = null)
+  {
+	if (is_null($q))
+	{
+		$q = Doctrine_Query::create()
+			->from('projects p');
 	}
-    //public static function getInstance()
-    //{
-    //    return Doctrine_Core::getTable('projects');
-    //}
+ 
+	$alias = $q->getRootAlias();
+ 
+	$q->andWhere($alias . '.expired_at > ?', date('Y-m-d h:i:s', time()))
+		->addOrderBy($alias . '.expired_at DESC');
+ 
+	return $q;
+  }
 }
