@@ -1,0 +1,25 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           projects
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          projects
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields: ~
+      list:
+        title: Список проектов
+      filter:  ~
+      form:
+        class: BackendprojectsForm
+      edit:
+        title: Редактирование проекта &laquo;%%title%%&raquo;
+      new:
+        title: Добавление нового проекта
