@@ -28,4 +28,9 @@ class myUser extends sfBasicSecurityUser
 
 	return array();
   }
+
+  public function resetProjectsHistory()
+  {
+	$this->getAttributeHolder()->remove('projects_history');
+  }
 }
