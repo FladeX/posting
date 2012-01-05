@@ -14,6 +14,10 @@ class projectsForm extends BaseprojectsForm
   {
 	$this->useFields(array('title', 'text', 'price'));
 
+	$this->widgetSchema->setHelp('title', 'например, &laquo;Наполнение автомобильного форума&raquo;');
+	$this->widgetSchema->setHelp('text', 'подробное описание проекта для исполнителей');
+	$this->widgetSchema->setHelp('price', 'предполагаемый бюджет');
+
 	$this->widgetSchema->setLabels(array(
 		'title'		=> 'Название проекта',
 		'text'		=> 'Описание проекта',
