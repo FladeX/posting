@@ -27,6 +27,8 @@ class projectsActions extends sfActions
   {
     $this->projects = Doctrine_Core::getTable('projects')->find(array($request->getParameter('id')));
 
+	$this->getUser()->addProjectToHistory($this->projects);
+
 	// находим количество оставшихся дней
 	$timeleft_days = $timeleft_hours = $timeleft_minutes = 0;
 	$project_timeleft = time($this->projects['expired_at']) - time($this->projects['created_at']);

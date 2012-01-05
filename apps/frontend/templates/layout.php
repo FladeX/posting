@@ -74,7 +74,7 @@
         <?php if ($sf_user->hasFlash('error')): ?>
           <div class="flash_error"><?php echo $sf_user->getFlash('error') ?></div>
         <?php endif; ?>
- 
+
           <?php echo $sf_content ?>
 
         </div><!-- #mainContent -->

@@ -47,6 +47,17 @@
 			</table>
 		</div>
 
+		<div id="projects_history" class="sidebarBlock">
+			<h3>Вы смотрели:</h3>
+			<ul class="userList">
+			<?php foreach ($sf_user->getProjectsHistory() as $project): ?>
+				<li>
+					<?php echo link_to($project->getTitle(), 'projects_show', $project) ?>
+				</li>
+			<?php endforeach ?>
+			</ul>
+		</div>
+
 	</div>
 
 	<div id="primaryContent">
