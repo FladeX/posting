@@ -104,7 +104,7 @@
 
 	<div class="sidebarBlock">
 		<div id="feedBlock" >
-			<a href="#">RSS-лента</a>
+			<a href="<?php echo url_for('projects', array('sf_format' => 'atom')) ?>">RSS-лента</a>
 		</div>
 	</div>
 

@@ -7,6 +7,7 @@
 <?php include_stylesheets() ?>
 <title><?php if (!include_slot('title')): ?>Posting.ru<?php endif; ?></title>
 <link rel="shortcut icon" href="/favicon.ico" />
+<link rel="alternate" type="application/atom+xml" title="Проекты" href="<?php echo url_for('projects', array('sf_format' => 'atom'), true) ?>" />
 </head>
 <body>
 

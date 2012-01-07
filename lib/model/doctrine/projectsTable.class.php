@@ -51,4 +51,13 @@ class projectsTable extends Doctrine_Table
  
 	return $q;
   }
+
+  public function getLatestProjects()
+  {
+	$q = Doctrine_Query::create()
+		->from('projects p');
+	$this->addActiveProjectsQuery($q);
+
+	return $q->fetchOne();
+  }
 }

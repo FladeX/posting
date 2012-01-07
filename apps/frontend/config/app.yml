@@ -3,5 +3,6 @@
 
 # default values
 all:
-    projects_per_page: 5
-    last_viewed_projects: 3
+    projects_per_page: 5 # количество проектов на страницу на главной сайта
+    last_viewed_projects: 3 # количество проектов в списке последних просмотров
+    rss_projects_count: 10 # количество проектов в rss-ленте
