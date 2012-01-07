@@ -9,6 +9,17 @@
     <?php include_javascripts() ?>
   </head>
   <body>
+
+	<?php if ($sf_user->isAuthenticated()): ?>
+	<div id="menu">
+		<ul>
+			<li><?php echo link_to('Проекты', 'projects') ?></li>
+			<li><?php echo link_to('Пользователи', 'sf_guard_user') ?></li>
+			<li><?php echo link_to('Выход', 'sf_guard_signout') ?></li>
+		</ul>
+	</div>
+	<?php endif ?>
+
     <?php echo $sf_content ?>
   </body>
 </html>
