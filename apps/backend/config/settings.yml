@@ -23,7 +23,19 @@ test:
     etag:                   false
 
 all:
+  .actions:
+    default_module: projects
+    default_action: index
+
+    login_module: sfGuardAuth
+    login_action: signin
+
+    secure_module:  sfGuardAuth
+    secure_action:  secure
+
   .settings:
+    enabled_modules: [default, sfGuardGroup, sfGuardUser, sfGuardPermission, sfGuardAuth]
+
     # Form security secret (CSRF protection)
     csrf_secret:            26193c53dc5e0b09e8c7fbe6a9d12c64ec5f7c22
 
