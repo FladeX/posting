@@ -10,6 +10,13 @@
  */
 class projectsActions extends sfActions
 {
+  public function executeSearch(sfWebRequest $request)
+  {
+	$this->forwardUnless($query = $request->getParameter('query'), 'projects', 'index');
+
+	$this->projects = Doctrine_Core::getTable('projects')->getForLuceneQuery($query);
+  }
+
   public function executeIndex(sfWebRequest $request)
   {
 	$this->projects = Doctrine_Core::getTable('projects')->getActiveProjects();

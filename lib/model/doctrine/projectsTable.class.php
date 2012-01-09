@@ -12,6 +12,48 @@ class projectsTable extends Doctrine_Table
      *
      * @return object projectsTable
      */
+  static public function getLuceneIndex()
+  {
+	ProjectConfiguration::registerZend();
+
+	if (file_exists($index = self::getLuceneIndexFile()))
+	{
+		return Zend_Search_Lucene::open($index);
+	}
+	else
+	{
+		return Zend_Search_Lucene::create($index);
+	}
+  }
+
+  static public function getLuceneIndexFile()
+  {
+	return sfConfig::get('sf_data_dir').'/projects.'.sfConfig::get('sf_environment').'.index';
+	//return sfConfig::get('sf_data_dir').'/projects.'.sfConfig::get('sf_environment').'.index';
+  }
+
+  public function getForLuceneQuery($query)
+  {
+	$hits = self::getLuceneIndex()->find($query);
+
+	$pks = array();
+	foreach ($hits as $hit) {
+		$pks[] = $hit->pk;
+	}
+
+	if (empty($pks)) {
+		return array();
+	}
+
+	$q = $this->createQuery('p')
+		->whereIn('p.id', $pks)
+		->limit(7);
+
+	$q = $this->addActiveProjectsQuery($q);
+
+	return $q->execute();
+  }
+
   public function retrieveActiveProjects(Doctrine_Query $q)
   {
 	return $this->addActiveProjectsQuery($q)->fetchOne();
@@ -52,7 +94,7 @@ class projectsTable extends Doctrine_Table
 	return $q;
   }
 
-  public function getLatestProjects()
+  public function getLatestProjects() // for RSS
   {
 	$q = Doctrine_Query::create()
 		->from('projects p');

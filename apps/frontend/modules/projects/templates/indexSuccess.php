@@ -96,8 +96,8 @@
 
 	<div id="searchBlock" class="sidebarBlock">
 		<h3>Поиск</h3>
-		<form action="#">
-			<input id="searchQuery" type="text" name="query" />
+		<form action="<?php echo url_for('projects_search') ?>" method="get">
+			<input id="searchQuery" type="text" name="query" value="<?php echo $sf_request->getParameter('query') ?>" />
 			<input type="submit" value="Найти" />
 		</form>
 	</div>

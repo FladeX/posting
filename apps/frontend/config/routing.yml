@@ -21,6 +21,10 @@ show_projects:
         id:         \d+
         sf_method:  [get]
 
+projects_search:
+    url:    /search
+    param:  { module: projects, action: search }
+
 default_index:
   url:   /:module
   param: { action: index }

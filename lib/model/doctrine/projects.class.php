@@ -25,4 +25,56 @@ class projects extends Baseprojects
 	return $this->getActiveProjectsQuery()->count();
   }
 
+  public function updateLuceneIndex()
+  {
+	$index = projectsTable::getLuceneIndex();
+
+	// удалить существующие записи
+	foreach ($index->find('pk:'.$this->getId()) as $hit)
+	{
+		$index->delete($hit->id);
+	}
+
+	$doc = new Zend_Search_Lucene_Document();
+
+	// сохраняем первичный ключ вакансии для идентификации ее в результатах поиска
+	$doc->addField(Zend_Search_Lucene_Field::Keyword('pk', $this->getId()));
+
+	// индексируем поля проекта
+	$doc->addField(Zend_Search_Lucene_Field::UnStored('text', $this->getText(), 'utf-8'));
+
+	// добавляем работу в индекс
+	$index->addDocument($doc);
+	$index->commit();
+  }
+
+  public function save(Doctrine_Connection $conn = null)
+  {
+	$conn = $conn ? $conn : $this->getTable()->getConnection();
+	$conn->beginTransaction();
+	try
+	{
+		$ret = parent::save($conn);
+		$this->updateLuceneIndex();
+		$conn->commit();
+		return $ret;
+	}
+	catch (Exception $e)
+	{
+		$conn->rollBack();
+		throw $e;
+	}
+  }
+
+  public function delete(Doctrine_Connection $conn = null)
+  {
+	$index = projectsTable::getLuceneIndex();
+
+	foreach ($index->find('pk:'.$this->getId()) as $hit)
+	{
+		$index->delete($hit->id);
+	}
+
+	return parent::delete($conn);
+  }
 }
